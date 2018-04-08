@@ -1,0 +1,119 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "Welcome to SAFE docs",
+            "title": "Home"
+        },
+        {
+            "location": "/#welcome-to-safe-docs",
+            "text": "",
+            "title": "Welcome to SAFE docs"
+        },
+        {
+            "location": "/intro/",
+            "text": "Introduction\n\n\nWhy SAFE?",
+            "title": "Introduction"
+        },
+        {
+            "location": "/intro/#introduction",
+            "text": "",
+            "title": "Introduction"
+        },
+        {
+            "location": "/intro/#why-safe",
+            "text": "",
+            "title": "Why SAFE?"
+        },
+        {
+            "location": "/gettingstarted/",
+            "text": "Getting up and running\n\n\nQuick start\n\n\nSAFE Dojo\n\n\nExample repositories\n\n\nFeedback & Testimonials\n\n\nSupport and Training",
+            "title": "Getting up and running"
+        },
+        {
+            "location": "/gettingstarted/#getting-up-and-running",
+            "text": "",
+            "title": "Getting up and running"
+        },
+        {
+            "location": "/gettingstarted/#quick-start",
+            "text": "",
+            "title": "Quick start"
+        },
+        {
+            "location": "/gettingstarted/#safe-dojo",
+            "text": "",
+            "title": "SAFE Dojo"
+        },
+        {
+            "location": "/gettingstarted/#example-repositories",
+            "text": "",
+            "title": "Example repositories"
+        },
+        {
+            "location": "/gettingstarted/#feedback-testimonials",
+            "text": "",
+            "title": "Feedback &amp; Testimonials"
+        },
+        {
+            "location": "/gettingstarted/#support-and-training",
+            "text": "",
+            "title": "Support and Training"
+        },
+        {
+            "location": "/overview/",
+            "text": "SAFE Stack overview\n\n\nServer Side programming in SAFE\n\n\nSuave\n\n\nGiraffe + Saturn\n\n\nCloud Platform - Azure\n\n\nClient Side programming in SAFE\n\n\nFable\n\n\nElmish",
+            "title": "SAFE Stack overview"
+        },
+        {
+            "location": "/overview/#safe-stack-overview",
+            "text": "",
+            "title": "SAFE Stack overview"
+        },
+        {
+            "location": "/overview/#server-side-programming-in-safe",
+            "text": "",
+            "title": "Server Side programming in SAFE"
+        },
+        {
+            "location": "/overview/#suave",
+            "text": "",
+            "title": "Suave"
+        },
+        {
+            "location": "/overview/#giraffe-saturn",
+            "text": "",
+            "title": "Giraffe + Saturn"
+        },
+        {
+            "location": "/overview/#cloud-platform-azure",
+            "text": "",
+            "title": "Cloud Platform - Azure"
+        },
+        {
+            "location": "/overview/#client-side-programming-in-safe",
+            "text": "",
+            "title": "Client Side programming in SAFE"
+        },
+        {
+            "location": "/overview/#fable",
+            "text": "",
+            "title": "Fable"
+        },
+        {
+            "location": "/overview/#elmish",
+            "text": "",
+            "title": "Elmish"
+        },
+        {
+            "location": "/mobile/",
+            "text": "Mobile SAFE",
+            "title": "Mobile SAFE"
+        },
+        {
+            "location": "/mobile/#mobile-safe",
+            "text": "",
+            "title": "Mobile SAFE"
+        }
+    ]
+}
