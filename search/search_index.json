@@ -2,13 +2,8 @@
     "docs": [
         {
             "location": "/",
-            "text": "Welcome to SAFE docs\n\n\nWelcome to the SAFE documentation site! This site contains all the documentation you'll need to quickly starting creating SAFE apps in F#. If you've not heard of SAFE before, please feel free to start with the \nintroduction\n. Alternatively, you can immediately try out the \nquick started\n guide and tutorial, or simply browse through the documentation.\n\n\nIf there's anything missing from here, please feel free to add the documentation directly (or supply an issue) to the \nGitHub repository\n.\n\n\nWe hope you enjoy using SAFE as much as we do!\n\n\nThe SAFE team.",
+            "text": "Welcome to the SAFE documentation site! This site contains all the documentation you'll need to quickly starting creating SAFE apps in F#. If you've not heard of SAFE before, please feel free to start with the \nintroduction\n. Alternatively, you can immediately try out the \nquick started\n guide and tutorial, or simply browse through the documentation.\n\n\nIf there's anything missing from here, please feel free to add the documentation directly (or supply an issue) to the \nGitHub repository\n.\n\n\nWe hope you enjoy using SAFE as much as we do!\n\n\nThe SAFE team.",
             "title": "Home"
-        },
-        {
-            "location": "/#welcome-to-safe-docs",
-            "text": "Welcome to the SAFE documentation site! This site contains all the documentation you'll need to quickly starting creating SAFE apps in F#. If you've not heard of SAFE before, please feel free to start with the  introduction . Alternatively, you can immediately try out the  quick started  guide and tutorial, or simply browse through the documentation.  If there's anything missing from here, please feel free to add the documentation directly (or supply an issue) to the  GitHub repository .  We hope you enjoy using SAFE as much as we do!  The SAFE team.",
-            "title": "Welcome to SAFE docs"
         },
         {
             "location": "/intro/",
@@ -27,7 +22,7 @@
         },
         {
             "location": "/overview/",
-            "text": "The SAFE acronym is made up of four separate components:\n\n\n\n\nS\naturn for back-end services in F#\n\n\nA\nzure as a hosting platform plus associated platform services\n\n\nF\nable for running F# in the web browser\n\n\nE\nlmish for client-side user interfaces\n\n\n\n\nSaturn\n\n\nThe \nGiraffe\n framework provides an F#-friendly, flexible pipeline for creating server-side web applications, built on top of ASP .NET Core - a high performance, rock-solid web server. The Saturn library builds on top of this solid foundation, and provides a set of \noptional\n abstractions which make configuring web applications and constructing complex routes extremely easy to achieve.\n\n\nBoth Saturn and Giraffe can host RESTful API endpoints, or drive static websites, or server-generated content, all inside an easy-to-learn functional programming model.\n\n\nMicrosoft Azure\n\n\nAzure is a comprehensive set of cloud services that developers and IT professionals use to build, deploy and manage applications through a global network of data centres. Integrated tools, DevOps and a marketplace support you in efficiently building anything from simple mobile apps to Internet-scale solutions.\n\n\nFable\n\n\nFable is an F# to JavaScript compiler powered by Babel, designed to produce readable and standard code. Fable allows you to create applications for the browser written entirely in F#, whilst also allowing you to interact with native Javascript as needed.\n\n\nElmish\n\n\nThe Elmish model allows you to construct user interfaces running in the browser using a functional programming model. Modelled on the Elm application model, Elmish uses the Model-View-Update paradigm to allow you to write applications that are simple to reason about. Elmish sits on top of the \nReact\n framework.\n\n\nAre there alternative components in the SAFE stack?\n\n\nYes, absolutely. The above components are what we recommended as the default SAFE stack, but you can of course replace the components with alternatives as you see fit. Here are some examples:\n\n\n\n\nSuave\n is a complete web server and programming model designed for F# that is similar to that of Giraffe.\n\n\nFreya\n is an alternative F#-first web stack which has a pluggable runtime model which allows it to be hosted in a variety of web servers including ASP .NET Core.\n\n\nAWS\n is Amazon's cloud compute offering, providing a large number of services available globally.\n\n\nWebSharper\n is a complete end-to-end programming stack, comprising both server- and client-side components. It supports both F# and C# programming models.",
+            "text": "The SAFE acronym is made up of four separate components:\n\n\n\n\nS\naturn for back-end services in F#\n\n\nA\nzure as a hosting platform plus associated platform services\n\n\nF\nable for running F# in the web browser\n\n\nE\nlmish for client-side user interfaces\n\n\n\n\n\n\nSaturn\n\n\nThe \nGiraffe\n framework provides an F#-friendly, flexible pipeline for creating server-side web applications, built on top of ASP .NET Core - a high performance, rock-solid web server. The Saturn library builds on top of this solid foundation, and provides a set of \noptional\n abstractions which make configuring web applications and constructing complex routes extremely easy to achieve.\n\n\nBoth Saturn and Giraffe can host RESTful API endpoints, or drive static websites, or server-generated content, all inside an easy-to-learn functional programming model.\n\n\nMicrosoft Azure\n\n\nAzure is a comprehensive set of cloud services that developers and IT professionals use to build, deploy and manage applications through a global network of data centres. Integrated tools, DevOps and a marketplace support you in efficiently building anything from simple mobile apps to Internet-scale solutions.\n\n\nFable\n\n\nFable is an F# to JavaScript compiler powered by Babel, designed to produce readable and standard code. Fable allows you to create applications for the browser written entirely in F#, whilst also allowing you to interact with native Javascript as needed.\n\n\nElmish\n\n\nThe Elmish model allows you to construct user interfaces running in the browser using a functional programming model. Modelled on the Elm application model, Elmish uses the Model-View-Update paradigm to allow you to write applications that are simple to reason about. Elmish sits on top of the \nReact\n framework.\n\n\nAre there alternative components in the SAFE stack?\n\n\nYes, absolutely. The above components are what we recommended as the default SAFE stack, but you can of course replace the components with alternatives as you see fit. Here are some examples:\n\n\n\n\nSuave\n is a complete web server and programming model designed for F# that is similar to that of Giraffe.\n\n\nFreya\n is an alternative F#-first web stack which has a pluggable runtime model which allows it to be hosted in a variety of web servers including ASP .NET Core.\n\n\nAWS\n is Amazon's cloud compute offering, providing a large number of services available globally.\n\n\nWebSharper\n is a complete end-to-end programming stack, comprising both server- and client-side components. It supports both F# and C# programming models.",
             "title": "SAFE Stack Overview"
         },
         {
@@ -77,43 +72,48 @@
         },
         {
             "location": "/learning/",
-            "text": "This section contains useful repositories that allow you to learn more about the SAFE stack, at your own pace.\n\n\nSAFE Dojo\n\n\nThe \nSAFE Dojo\n is a guided set of tasks designed to give you hands-on experience with the client and server components of the SAFE stack. You'll create server-side routes, client side UI and shared validation logic as you create a mashup application to provide details on UK locations.\n\n\nThe dojo takes around 90 minutes to complete if you have never worked with the stack before.\n\n\nExample repositories\n\n\nThe following example repositories (and more!) can be found in the official \nSAFE Stack\n organisational GitHub page.\n\n\nSAFE Bookstore\n\n\nThe \nSAFE Bookstore\n demonstrates many of the useful features of a larger SAFE application, including login authentication using JWT tokens, automated deployment via Docker and SEO support with urls for pages. It also includes an example of using Azure Storage tables as a persistence store.\n\n\nSAFE ConfPlanner\n\n\nThe \nSAFE ConfPlanner\n demonstrates how to build and share a complex domain model in SAFE across client and server, along with the use of websockets for a \"reactive\" UI support push notifications. It also demonstrates the use of F#'s flexible mailbox processors to implement an event-driven architecture.\n\n\nSAFE Search\n\n\nThe \nSAFE Search\n repository shows how to use Azure services to implement a SAFE application that supports searching over multiple data sources with support for find-ahead typing and throttling. The application uses a combination of Azure Search and Azure Storage Tables to construct a large search index that can rapidly find results in a number of ways.\n\n\nSAFE Chat\n\n\nThe \nSAFE Chat\n application is a real-time chat application built on SAFE that uses the \nAKKA framework\n to manage actors that represent chat users, including Akka Streams and the Akkling F# library.\n\n\nMobile SAFE\n\n\nThe \nSAFE Nightwatch\n app is a sample mobile application using the \nReact Native\n library, built on top of the SAFE stack. React Native permits a very similar programming when writing SAFE applications as browser applications, so the experience should be very familiar to you.",
+            "text": "This section contains useful repositories that allow you to learn more about the SAFE stack, at your own pace.\n\n\nTutorials\n\n\nSAFE Dojo\n\n\nThis dojo is a guided set of tasks designed to give you hands-on experience with the client and server components of the SAFE stack. You'll create server-side routes, client side UI and shared validation logic as you create a mashup application to provide details on UK locations.\n\n\nThe dojo takes around 90 minutes to complete if you have never worked with the stack before.\n\n\nSamples\n\n\nThe following example repositories (and more!) can be found in the official \nSAFE Stack\n organisational GitHub page.\n\n\nSAFE Bookstore\n\n\nThis sample demonstrates many of the useful features of a larger SAFE application, including login authentication using JWT tokens, automated deployment via Docker and SEO support with urls for pages. It also includes an example of using Azure Storage tables as a persistence store.\n\n\nSAFE ConfPlanner\n\n\nThis sample demonstrates how to build and share a complex domain model in SAFE across client and server, along with the use of websockets for a \"reactive\" UI support push notifications. It also demonstrates the use of F#'s flexible mailbox processors to implement an event-driven architecture.\n\n\nSAFE Search\n\n\nThis repository shows how to use Azure services to implement a SAFE application that supports searching over multiple data sources with support for find-ahead typing and throttling. The application uses a combination of Azure Search and Azure Storage Tables to construct a large search index that can rapidly find results in a number of ways.\n\n\nSAFE Chat\n\n\nThis application is a real-time chat application built on SAFE that uses the \nAKKA framework\n to manage actors that represent chat users, including Akka Streams and the Akkling F# library.\n\n\nSAFE Nightwatch\n\n\nThis application is a sample mobile application using the \nReact Native\n library, built on top of the SAFE stack. React Native permits a very similar programming when writing SAFE applications as browser applications, so the experience should be very familiar to you.",
             "title": "Learning Resources"
         },
         {
+            "location": "/learning/#tutorials",
+            "text": "",
+            "title": "Tutorials"
+        },
+        {
             "location": "/learning/#safe-dojo",
-            "text": "The  SAFE Dojo  is a guided set of tasks designed to give you hands-on experience with the client and server components of the SAFE stack. You'll create server-side routes, client side UI and shared validation logic as you create a mashup application to provide details on UK locations.  The dojo takes around 90 minutes to complete if you have never worked with the stack before.",
+            "text": "This dojo is a guided set of tasks designed to give you hands-on experience with the client and server components of the SAFE stack. You'll create server-side routes, client side UI and shared validation logic as you create a mashup application to provide details on UK locations.  The dojo takes around 90 minutes to complete if you have never worked with the stack before.",
             "title": "SAFE Dojo"
         },
         {
-            "location": "/learning/#example-repositories",
+            "location": "/learning/#samples",
             "text": "The following example repositories (and more!) can be found in the official  SAFE Stack  organisational GitHub page.",
-            "title": "Example repositories"
+            "title": "Samples"
         },
         {
             "location": "/learning/#safe-bookstore",
-            "text": "The  SAFE Bookstore  demonstrates many of the useful features of a larger SAFE application, including login authentication using JWT tokens, automated deployment via Docker and SEO support with urls for pages. It also includes an example of using Azure Storage tables as a persistence store.",
+            "text": "This sample demonstrates many of the useful features of a larger SAFE application, including login authentication using JWT tokens, automated deployment via Docker and SEO support with urls for pages. It also includes an example of using Azure Storage tables as a persistence store.",
             "title": "SAFE Bookstore"
         },
         {
             "location": "/learning/#safe-confplanner",
-            "text": "The  SAFE ConfPlanner  demonstrates how to build and share a complex domain model in SAFE across client and server, along with the use of websockets for a \"reactive\" UI support push notifications. It also demonstrates the use of F#'s flexible mailbox processors to implement an event-driven architecture.",
+            "text": "This sample demonstrates how to build and share a complex domain model in SAFE across client and server, along with the use of websockets for a \"reactive\" UI support push notifications. It also demonstrates the use of F#'s flexible mailbox processors to implement an event-driven architecture.",
             "title": "SAFE ConfPlanner"
         },
         {
             "location": "/learning/#safe-search",
-            "text": "The  SAFE Search  repository shows how to use Azure services to implement a SAFE application that supports searching over multiple data sources with support for find-ahead typing and throttling. The application uses a combination of Azure Search and Azure Storage Tables to construct a large search index that can rapidly find results in a number of ways.",
+            "text": "This repository shows how to use Azure services to implement a SAFE application that supports searching over multiple data sources with support for find-ahead typing and throttling. The application uses a combination of Azure Search and Azure Storage Tables to construct a large search index that can rapidly find results in a number of ways.",
             "title": "SAFE Search"
         },
         {
             "location": "/learning/#safe-chat",
-            "text": "The  SAFE Chat  application is a real-time chat application built on SAFE that uses the  AKKA framework  to manage actors that represent chat users, including Akka Streams and the Akkling F# library.",
+            "text": "This application is a real-time chat application built on SAFE that uses the  AKKA framework  to manage actors that represent chat users, including Akka Streams and the Akkling F# library.",
             "title": "SAFE Chat"
         },
         {
-            "location": "/learning/#mobile-safe",
-            "text": "The  SAFE Nightwatch  app is a sample mobile application using the  React Native  library, built on top of the SAFE stack. React Native permits a very similar programming when writing SAFE applications as browser applications, so the experience should be very familiar to you.",
-            "title": "Mobile SAFE"
+            "location": "/learning/#safe-nightwatch",
+            "text": "This application is a sample mobile application using the  React Native  library, built on top of the SAFE stack. React Native permits a very similar programming when writing SAFE applications as browser applications, so the experience should be very familiar to you.",
+            "title": "SAFE Nightwatch"
         },
         {
             "location": "/support/",
@@ -142,13 +142,8 @@
         },
         {
             "location": "/testimonials/",
-            "text": "Feedback & Testimonials\n\n\nPlease feel free to submit a PR to add testimonials to this page!",
-            "title": "Testimonials"
-        },
-        {
-            "location": "/testimonials/#feedback-testimonials",
             "text": "Please feel free to submit a PR to add testimonials to this page!",
-            "title": "Feedback &amp; Testimonials"
+            "title": "Testimonials"
         }
     ]
 }
