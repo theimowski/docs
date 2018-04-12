@@ -586,13 +586,13 @@ let getCustomers next ctx =
 <p>Also note the <code>next</code> and <code>ctx</code> arguments. These are used by Giraffe as part of its <a href="https://github.com/giraffe-fsharp/Giraffe/blob/master/DOCUMENTATION.md#fundamentals">HTTP pipeline</a> and are required by the <code>json</code> function.</p>
 <p>Now expose the api method using <a href="https://saturnframework.github.io/docs/api/scope/">Saturn's</a> <code>scope</code> construct and add the scope to your overall application scope:</p>
 <pre><code class="fsharp">let myApis = scope {
-    get &quot;api/customers/&quot; getCustomers
+    get &quot;/api/customers/&quot; getCustomers
 }
 </code></pre>
 
 <p>For simple endpoints you may elect to embed the API call directly in the scope (and use partial application to omit the <code>next</code> and <code>ctx</code> arguments):</p>
 <pre><code class="fsharp">let myApis = scope {
-    get &quot;/customers/&quot; (json (loadCustomersFromDb()))
+    get &quot;/api/customers/&quot; (json (loadCustomersFromDb()))
 }
 </code></pre>
 
