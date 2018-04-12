@@ -608,7 +608,29 @@ let getCustomers next ctx =
 <p>By default, serialization between Fable and Giraffe <strong>is not compatible</strong>. In order to fix this, you must replace the JSON converter in Giraffe with Fable's own <code>IJsonSerializer</code>.</p>
 <p>If you are using the dotnet SAFE Template, this will automatically be done for you - see the <code>config</code> function in <code>Server.fs</code>.</p>
 <h3 id="sharing-data-using-fableremoting">Sharing data using Fable.Remoting</h3>
+<p>As an alternative to raw HTTP, you can also use the <a href="https://github.com/Zaid-Ajaj/Fable.Remoting">Fable.Remoting</a> library, which provides an RPC-style mechanism for calling server endpoints.</p>
+<p>In our case, instead of creating a <code>scope { }</code> on the server and using <code>fetch</code> on the client, you create a simple protocol which contains methods exposed by the server:</p>
+<pre><code class="fsharp">type ICustomer = {
+    customers : unit -&gt; Async&lt;Customer array&gt;
+}
+
+let server : ICustomer = {
+    customers = fun () -&gt; async { return loadCustomersFromDb() }
+}
+</code></pre>
+
+<p>On the client, you need only create a proxy for the protocol and then can call methods on it directly.</p>
+<pre><code class="fsharp">async {
+    let server = Proxy.remoting&lt;ICustomer&gt; {()}
+    let! customers = server.customers()
+    /// ...
+}
+</code></pre>
+
+<p>Notice here, there is no need to create routes, or worry about HTTP verbs, or even involve yourself with the Giraffe pipeline.</p>
 <h3 id="when-should-i-use-raw-http-vs-fable-remoting">When should I use raw HTTP vs Fable Remoting?</h3>
+<p>Fable Remoting provides an excellent way to quickly get up and running with the SAFE stack. You can rapidly create contracts between client / server and have guaranteed contracts between both client and server. If you're using a "closed" app without exposing an API to other consumers, and do not need close control of the HTTP channel, consider using Fable.Remoting.</p>
+<p>The raw HTTP model with <code>scope { }</code> requires you to construct routes manually and does not guarantee that the client and endpoint have the same contract (you have to specify it on both sides yourself), but gives you total control over the routing and verbs used. If you have a public API that is exposed not just to your own application but to third-parties, or you need more fine grained control over your routes and data, you should stick with this approach.</p>
                 
                   
                 
