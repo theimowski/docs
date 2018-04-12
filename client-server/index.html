@@ -356,8 +356,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#sharing-using-raw-http" title="Sharing using raw HTTP" class="md-nav__link">
-    Sharing using raw HTTP
+  <a href="#sharing-data-with-saturn" title="Sharing data with Saturn" class="md-nav__link">
+    Sharing data with Saturn
   </a>
   
     <nav class="md-nav">
@@ -487,8 +487,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#sharing-using-raw-http" title="Sharing using raw HTTP" class="md-nav__link">
-    Sharing using raw HTTP
+  <a href="#sharing-data-with-saturn" title="Sharing data with Saturn" class="md-nav__link">
+    Sharing data with Saturn
   </a>
   
     <nav class="md-nav">
@@ -569,9 +569,9 @@
 <p>You can also share code using the same mechanism. This is extremely useful for e.g shared validation or business logic that needs to occur on both client and server.</p>
 <p>Fable will translate your functions into native Javascript, and will even translate many calls to the .NET BCL into javascript! You can read more about this <a href="http://fable.io/docs/compatibility.html">on the Fable website</a>.</p>
 <h2 id="sharing-data">Sharing Data</h2>
-<p>Sharing data can be achieved in two main ways in SAFE: through <strong>raw HTTP methods</strong>, such as GET and POST etc., or via the <strong>Fable.Remoting</strong> package.</p>
-<h3 id="sharing-using-raw-http">Sharing using raw HTTP</h3>
-<p>Sharing data using raw HTTP methods is very simple. Start by creating a function in your server that returns some data:</p>
+<p>Sharing data can be achieved in two main ways in SAFE: through the <a href="https://saturnframework.github.io/docs/">Saturn</a> API directly, or via the <a href="https://github.com/Zaid-Ajaj/Fable.Remoting">Fable.Remoting</a> library.</p>
+<h3 id="sharing-data-with-saturn">Sharing data with Saturn</h3>
+<p>Sharing data using Saturn is very simple. Start by creating a function in your server that returns some data:</p>
 <pre><code class="fsharp">let loadCustomersFromDb() =
     [ { Name = &quot;Joe Bloggs&quot; } ]
 </code></pre>
@@ -583,8 +583,8 @@ let getCustomers next ctx =
 </code></pre>
 
 <p>You can opt to combine both of the above functions into one, depending on your preferences, but it's often good practice to separate your data access from serving data in HTTP endpoints.</p>
-<p>Also note the <code>next</code> and <code>ctx</code> arguments. These are used by Giraffe as part of its HTTP pipeline and are required by the <code>json</code> function.</p>
-<p>Now expose the api method using Saturn's <code>scope</code> construct and add the scope to your overall application scope:</p>
+<p>Also note the <code>next</code> and <code>ctx</code> arguments. These are used by Giraffe as part of its <a href="https://github.com/giraffe-fsharp/Giraffe/blob/master/DOCUMENTATION.md#fundamentals">HTTP pipeline</a> and are required by the <code>json</code> function.</p>
+<p>Now expose the api method using <a href="https://saturnframework.github.io/docs/api/scope/">Saturn's</a> <code>scope</code> construct and add the scope to your overall application scope:</p>
 <pre><code class="fsharp">let myApis = scope {
     get &quot;api/customers/&quot; getCustomers
 }
@@ -609,7 +609,7 @@ let getCustomers next ctx =
 <p>If you are using the dotnet SAFE Template, this will automatically be done for you - see the <code>config</code> function in <code>Server.fs</code>.</p>
 <h3 id="sharing-data-using-fableremoting">Sharing data using Fable.Remoting</h3>
 <p>As an alternative to raw HTTP, you can also use the <a href="https://github.com/Zaid-Ajaj/Fable.Remoting">Fable.Remoting</a> library, which provides an RPC-style mechanism for calling server endpoints.</p>
-<p>In our case, instead of creating a <code>scope { }</code> on the server and using <code>fetch</code> on the client, you create a simple protocol which contains methods exposed by the server:</p>
+<p>In our case, instead of creating a <code>scope { }</code> on the server and using <code>fetch</code> on the client, you create a simple <em>protocol</em> which contains methods exposed by the server:</p>
 <pre><code class="fsharp">type ICustomer = {
     customers : unit -&gt; Async&lt;Customer array&gt;
 }
