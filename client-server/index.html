@@ -13,7 +13,7 @@
         <meta name="description" content="Documentation for SAFE">
       
       
-        <link rel="canonical" href="http://safe-stack.github.io/docs/testimonials/">
+        <link rel="canonical" href="http://safe-stack.github.io/docs/client-server/">
       
       
         <meta name="author" content="SAFE Stack">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Testimonials - SAFE Documentation</title>
+        <title>Client Server communication - SAFE Documentation</title>
       
     
     
@@ -99,6 +99,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
+      <a href="#sharing-types" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -121,7 +125,7 @@
                 SAFE Documentation
               </span>
               <span class="md-header-nav__topic">
-                Testimonials
+                Client Server communication
               </span>
             
           
@@ -284,10 +288,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
     
     <label class="md-nav__link" for="nav-5">
       Learn about SAFE
@@ -303,11 +309,86 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../client-server/" title="Client Server communication" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Client Server communication
+      </label>
+    
+    <a href="./" title="Client Server communication" class="md-nav__link md-nav__link--active">
       Client Server communication
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sharing-types" title="Sharing Types" class="md-nav__link">
+    Sharing Types
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sharing-code" title="Sharing Code" class="md-nav__link">
+    Sharing Code
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sharing-data" title="Sharing Data" class="md-nav__link">
+    Sharing Data
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sharing-using-raw-http" title="Sharing using raw HTTP" class="md-nav__link">
+    Sharing using raw HTTP
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sharing-data-using-fableremoting" title="Sharing data using Fable.Remoting" class="md-nav__link">
+    Sharing data using Fable.Remoting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#when-should-i-use-raw-http-vs-fable-remoting" title="When should I use raw HTTP vs Fable Remoting?" class="md-nav__link">
+    When should I use raw HTTP vs Fable Remoting?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -344,18 +425,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-    
-    <a href="./" title="Testimonials" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../testimonials/" title="Testimonials" class="md-nav__link">
       Testimonials
     </a>
-    
   </li>
 
     
@@ -366,17 +440,163 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sharing-types" title="Sharing Types" class="md-nav__link">
+    Sharing Types
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sharing-code" title="Sharing Code" class="md-nav__link">
+    Sharing Code
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sharing-data" title="Sharing Data" class="md-nav__link">
+    Sharing Data
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sharing-using-raw-http" title="Sharing using raw HTTP" class="md-nav__link">
+    Sharing using raw HTTP
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sharing-data-using-fableremoting" title="Sharing data using Fable.Remoting" class="md-nav__link">
+    Sharing data using Fable.Remoting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#when-should-i-use-raw-http-vs-fable-remoting" title="When should I use raw HTTP vs Fable Remoting?" class="md-nav__link">
+    When should I use raw HTTP vs Fable Remoting?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/SAFE-Stack/docs/edit/master/docs/testimonials.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/SAFE-Stack/docs/edit/master/docs/client-server.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>Testimonials</h1>
+                  <h1>Client Server communication</h1>
                 
-                <p>Please feel free to submit a PR to add testimonials to this page!</p>
+                <p>One of SAFE's best features is the ability to share <strong>data</strong>, <strong>types</strong> and <strong>code</strong> across client and server. This page illustrates the different ways this can be achieved.</p>
+<h2 id="sharing-types">Sharing Types</h2>
+<p>Sharing your domain types and contracts between client and server is extremely simple. Thanks to Fable's excellent F# transpilation into Javascript, you can use all standard F# language features such as Records, Tuples and Discriminated Unions without worry.</p>
+<p>To share types across both your client and server project:</p>
+<ul>
+<li>Create a file in your repository called e.g <code>Shared.fs</code>.
+<img alt="" src="../img\client-server-01.png" /></li>
+<li>Create types in the file as needed e.g</li>
+</ul>
+<pre><code class="fsharp">type Customer = { Name : string }
+</code></pre>
+
+<ul>
+<li>Reference this file to your server project. You can now reference those types in the server.</li>
+</ul>
+<pre><code class="xml">&lt;Project Sdk=&quot;Microsoft.NET.Sdk&quot;&gt;
+    ...
+    &lt;ItemGroup&gt;
+    &lt;Compile Include=&quot;../Shared/Shared.fs&quot; /&gt;
+    &lt;/ItemGroup&gt;
+    ...
+&lt;/Project&gt;
+</code></pre>
+
+<ul>
+<li>Reference this file to your client project (as above). You can now reference those types in the client; types will be compiled into Javascript types and seamlessly translated for you.</li>
+</ul>
+<h2 id="sharing-code">Sharing Code</h2>
+<p>You can also share code using the same mechanism. This is extremely useful for e.g shared validation or business logic that needs to occur on both client and server.</p>
+<p>Fable will translate your functions into native Javascript, and will even translate many calls to the .NET BCL into javascript! You can read more about this <a href="http://fable.io/docs/compatibility.html">on the Fable website</a>.</p>
+<h2 id="sharing-data">Sharing Data</h2>
+<p>Sharing data can be achieved in two main ways in SAFE: through <strong>raw HTTP methods</strong>, such as GET and POST etc., or via the <strong>Fable.Remoting</strong> package.</p>
+<h3 id="sharing-using-raw-http">Sharing using raw HTTP</h3>
+<p>Sharing data using raw HTTP methods is very simple:</p>
+<ul>
+<li>Create a function in your server that returns some data.</li>
+</ul>
+<pre><code class="fsharp">let loadCustomersFromDb() =
+    [ { Name = &quot;Joe Bloggs&quot; } ]
+</code></pre>
+
+<ul>
+<li>Create a method which returns the data as JSON within Giraffe's HTTP context.</li>
+</ul>
+<pre><code class="fsharp">/// Returns the returns of loadCustomersFromDb as JSON.
+let getCustomers next ctx =
+    json (loadCustomersFromDb()) next ctx
+</code></pre>
+
+<p>You can opt to combine both functions above into one, depending on your preferences. It's often good practice to separate your data access from serving data in HTTP endpoints, as shown here.</p>
+<p>Also note the <code>next</code> and <code>ctx</code> arguments. These are used by Giraffe as part of its HTTP pipeline and are required by the <code>json</code> function.</p>
+<ul>
+<li>Expose the api method using Saturn's <code>scope</code> construct and add the scope to your overall application scope:</li>
+</ul>
+<pre><code class="fsharp">let myApis = scope {
+    get &quot;api/customers/&quot; getCustomers
+}
+</code></pre>
+
+<p>For simple endpoints you may elect to embed the API call directly in the scope (and use partial application to omit the <code>next</code> and <code>ctx</code> arguments):</p>
+<pre><code class="fsharp">let myApis = scope {
+    get &quot;/customers/&quot; (json (loadCustomersFromDb()))
+}
+</code></pre>
+
+<ul>
+<li>Call the endpoint from your client application.</li>
+</ul>
+<pre><code class="fsharp">promise {    
+    let! customers = Fetch.fetchAs&lt;Customer array&gt; (sprintf &quot;api/customers&quot;) []
+    // do more with customers here...
+}
+</code></pre>
+
+<p>Note the use of the <code>promise { }</code> computation expression. This functions like <code>async { }</code> blocks that you already know, whilst the <code>fetchAs</code> function automatically deserializes the JSON back into a <code>Customer</code> array.</p>
+<h3 id="sharing-data-using-fableremoting">Sharing data using Fable.Remoting</h3>
+<h3 id="when-should-i-use-raw-http-vs-fable-remoting">When should I use raw HTTP vs Fable Remoting?</h3>
                 
                   
                 
@@ -403,8 +623,8 @@
 
         <!-- Link to previous page -->
         
-          <a href="../support/"
-              title="Support"
+          <a href="../quickstart/"
+              title="Quick Start"
               class="md-flex md-footer-nav__link md-footer-nav__link--prev"
               rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -417,13 +637,31 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Support
+                Quick Start
               </span>
             </div>
           </a>
         
 
         <!-- Link to next page -->
+        
+          <a href="../learning/" title="Learning Resources"
+              class="md-flex md-footer-nav__link md-footer-nav__link--next"
+              rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch
+                  md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Learning Resources
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward
+                    md-footer-nav__button"></i>
+            </div>
+          </a>
         
       </nav>
     </div>
