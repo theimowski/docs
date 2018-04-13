@@ -22,7 +22,7 @@
         },
         {
             "location": "/quickstart/",
-            "text": "This page provides some basic guidance on getting up and running with your first SAFE application.\n\n\nInstall pre-requisites\n\n\nYou'll need to install the following pre-requisites in order to build SAFE applications\n\n\n\n\nThe \n.NET Core SDK 2.x\n.\n\n\nThe \nYarn\n package manager.\n\n\nNode 8.x\n installed for the front end components.\n\n\nIf you're running on OSX or Linux, you'll also need to install \nMono\n.\n\n\n\n\nInstall an F# code editor\n\n\nYou'll also want an IDE to create F# applications. We recommend one of the following great IDEs.\n\n\n\n\nVS Code\n + \nIonide\n extension\n\n\nVisual Studio 2017\n\n\nJetbrains Rider\n\n\n\n\nCreate your first SAFE app\n\n\n\n\nCreate a new directory on your machine\n\n\nOpen a command prompt\n\n\nEnter \ndotnet new -i SAFE.Template\n to install the \nSAFE project template\n (you only need to do this once!)\n\n\nEnter \ndotnet new SAFE -lang F#\n to create a new SAFE project\n\n\nEnter \nbuild.cmd run\n (Windows) or \n./build.sh run\n (Linux / OSX)\n\n\n\n\nCongratulations! After a short delay, you'll be presented with a SAFE application running in your browser! \n\n\nThe app is already running in development mode and watches your project for changes. Whenever you save a file in the client project it will refresh the browser automatically. If you save a file in the server project it will restart the server in the background.\n\n\nTip: Take a look at the \ntemplate options\n. There are many predefined options to choose from, like server technology or client/server communication technology.",
+            "text": "This page provides some basic guidance on getting up and running with your first SAFE application.\n\n\nInstall pre-requisites\n\n\nYou'll need to install the following pre-requisites in order to build SAFE applications\n\n\n\n\nThe \n.NET Core SDK 2.x\n.\n\n\nThe \nYarn\n package manager.\n\n\nNode 8.x\n installed for the front end components.\n\n\nIf you're running on OSX or Linux, you'll also need to install \nMono\n.\n\n\n\n\nInstall an F# code editor\n\n\nYou'll also want an IDE to create F# applications. We recommend one of the following great IDEs.\n\n\n\n\nVS Code\n + \nIonide\n extension\n\n\nVisual Studio 2017\n\n\nJetbrains Rider\n\n\n\n\nCreate your first SAFE app\n\n\n\n\nCreate a new directory on your machine\n\n\nOpen a command prompt\n\n\nEnter \ndotnet new -i SAFE.Template\n to install the \nSAFE project template\n (you only need to do this once!)\n\n\nEnter \ndotnet new SAFE -lang F#\n to create a new SAFE project\n\n\nEnter \nbuild.cmd run\n (Windows) or \n./build.sh run\n (Linux / OSX)\n\n\n\n\nCongratulations! After a short delay, you'll be presented with a basic SAFE application running in your browser! The app will by default run in \"development mode\", which means it automatically watches your project for changes. Whenever you save a file in the client project it will refresh the browser \nautomatically\n; if you save a file in the server project it will restart the server in the background.\n\n\nTip: Take a look at the \ntemplate options\n. There are several ways to customise the default application, including server technology and client/server communication technology.",
             "title": "Quick Start"
         },
         {
@@ -37,8 +37,53 @@
         },
         {
             "location": "/quickstart/#create-your-first-safe-app",
-            "text": "Create a new directory on your machine  Open a command prompt  Enter  dotnet new -i SAFE.Template  to install the  SAFE project template  (you only need to do this once!)  Enter  dotnet new SAFE -lang F#  to create a new SAFE project  Enter  build.cmd run  (Windows) or  ./build.sh run  (Linux / OSX)   Congratulations! After a short delay, you'll be presented with a SAFE application running in your browser!   The app is already running in development mode and watches your project for changes. Whenever you save a file in the client project it will refresh the browser automatically. If you save a file in the server project it will restart the server in the background.  Tip: Take a look at the  template options . There are many predefined options to choose from, like server technology or client/server communication technology.",
+            "text": "Create a new directory on your machine  Open a command prompt  Enter  dotnet new -i SAFE.Template  to install the  SAFE project template  (you only need to do this once!)  Enter  dotnet new SAFE -lang F#  to create a new SAFE project  Enter  build.cmd run  (Windows) or  ./build.sh run  (Linux / OSX)   Congratulations! After a short delay, you'll be presented with a basic SAFE application running in your browser! The app will by default run in \"development mode\", which means it automatically watches your project for changes. Whenever you save a file in the client project it will refresh the browser  automatically ; if you save a file in the server project it will restart the server in the background.  Tip: Take a look at the  template options . There are several ways to customise the default application, including server technology and client/server communication technology.",
             "title": "Create your first SAFE app"
+        },
+        {
+            "location": "/safe-template/",
+            "text": "The \nSAFE Template\n is a \ndotnet CLI template\n for SAFE Stack projects, designed to get you up and running as quickly as possible, with flexible options to suit your application.\n\n\nThe template gets you up and running with 3 core components of the stack:\n\n\n\n\nSaturn\n, \nGiraffe\n or \nSuave\n.\n\n\nFable\n\n\nElmish\n\n\n\n\nCurrently, the template does not include any Azure / other Cloud integration. Refer to the \nSAFE-Bookstore\n repository for an example of deploying to Azure and for more details about this stack. We're working on fixing this soon!\n\n\nUsing the template\n\n\nRefer to the \nQuick Start guide\n to see basic guidance on how to use the template.\n\n\nTemplate options\n\n\nThe template provides the ability to customise the created application. You can see template version and available options by running  \ndotnet new SAFE --help\n.\n\n\nServer\n\n\nConfigures the SAFE app to use one of three different back-end hosting platforms.\n\n\nUsage: \ndotnet new SAFE --Server <server>\n\n\nWhere \n<server>\n is one of:\n\n\n\n\nsaturn\n: Creates a SAFE app running on Saturn on top of Giraffe \n(recommended)\n.\n\n\ngiraffe\n: Creates a SAFE app running on Giraffe only.\n\n\nsuave\n: Creates a SAFE app running on Suave.\n\n\n\n\nFulma\n\n\nConfigures the SAFE app to apply \nFulma\n bindings to the UI template.\n\n\nUsage: \ndotnet new SAFE --Fulma <template>\n\n\nWhere \ntemplate\n is one of:\n\n\n\n\nnone\n: don't add Fulma bindings at all\n\n\nbasic\n: adds Fulma basic template\n\n\nadmin\n: adds Fulma with the \n'Admin'\n Bulma template.\n\n\ncover\n: adds Fulma with the \n'Cover'\n Bulma template.\n\n\nhero\n: adds Fulma with the \n'Hero'\n Bulma template.\n\n\nlanding\n: adds Fulma with the \n'Landing'\n Bulma template.\n\n\nlogin\n: adds Fulma with the \n'Login'\n Bulma template.\n\n\n\n\nFable.Remoting\n\n\nConfigures the SAFE app to use \nFable.Remoting\n to the template. See \nhere\n for an overview of Fable Remoting and the alternatives for sharing data between client and server.\n\n\nUsage: \ndotnet new SAFE --Remoting\n\n\nDocker\n\n\nConfigures the SAFE app to use a \nFAKE\n target that bundles and build a Docker image.\n\n\nUsage: \ndotnet new SAFE --Docker\n\n\nNPM\n\n\nConfigures the SAFE app to use NPM instead of default Yarn for JS package management.\n\n\nUsage: \ndotnet new SAFE --NPM\n\n\nExamples\n\n\n\n\nCreate a SAFE application using all defaults: \ndotnet new SAFE -lang F#\n\n\nCreate a SAFE application using Saturn with Fable Remoting: \ndotnet new SAFE -lang F# --Server saturn --Remoting\n\n\nCreate a SAFE application using Giraffe with Fulma: \ndotnet new SAFE -lang F# --Server giraffe --Fulma landing",
+            "title": "The SAFE template"
+        },
+        {
+            "location": "/safe-template/#using-the-template",
+            "text": "Refer to the  Quick Start guide  to see basic guidance on how to use the template.",
+            "title": "Using the template"
+        },
+        {
+            "location": "/safe-template/#template-options",
+            "text": "The template provides the ability to customise the created application. You can see template version and available options by running   dotnet new SAFE --help .",
+            "title": "Template options"
+        },
+        {
+            "location": "/safe-template/#server",
+            "text": "Configures the SAFE app to use one of three different back-end hosting platforms.  Usage:  dotnet new SAFE --Server <server>  Where  <server>  is one of:   saturn : Creates a SAFE app running on Saturn on top of Giraffe  (recommended) .  giraffe : Creates a SAFE app running on Giraffe only.  suave : Creates a SAFE app running on Suave.",
+            "title": "Server"
+        },
+        {
+            "location": "/safe-template/#fulma",
+            "text": "Configures the SAFE app to apply  Fulma  bindings to the UI template.  Usage:  dotnet new SAFE --Fulma <template>  Where  template  is one of:   none : don't add Fulma bindings at all  basic : adds Fulma basic template  admin : adds Fulma with the  'Admin'  Bulma template.  cover : adds Fulma with the  'Cover'  Bulma template.  hero : adds Fulma with the  'Hero'  Bulma template.  landing : adds Fulma with the  'Landing'  Bulma template.  login : adds Fulma with the  'Login'  Bulma template.",
+            "title": "Fulma"
+        },
+        {
+            "location": "/safe-template/#fableremoting",
+            "text": "Configures the SAFE app to use  Fable.Remoting  to the template. See  here  for an overview of Fable Remoting and the alternatives for sharing data between client and server.  Usage:  dotnet new SAFE --Remoting",
+            "title": "Fable.Remoting"
+        },
+        {
+            "location": "/safe-template/#docker",
+            "text": "Configures the SAFE app to use a  FAKE  target that bundles and build a Docker image.  Usage:  dotnet new SAFE --Docker",
+            "title": "Docker"
+        },
+        {
+            "location": "/safe-template/#npm",
+            "text": "Configures the SAFE app to use NPM instead of default Yarn for JS package management.  Usage:  dotnet new SAFE --NPM",
+            "title": "NPM"
+        },
+        {
+            "location": "/safe-template/#examples",
+            "text": "Create a SAFE application using all defaults:  dotnet new SAFE -lang F#  Create a SAFE application using Saturn with Fable Remoting:  dotnet new SAFE -lang F# --Server saturn --Remoting  Create a SAFE application using Giraffe with Fulma:  dotnet new SAFE -lang F# --Server giraffe --Fulma landing",
+            "title": "Examples"
         },
         {
             "location": "/overview/",
@@ -109,11 +154,6 @@
             "location": "/client-server/#when-should-i-use-raw-http-vs-fable-remoting",
             "text": "Fable Remoting provides an excellent way to quickly get up and running with the SAFE stack. You can rapidly create contracts between client / server and have guaranteed contracts between both client and server. If you're using a \"closed\" app without exposing an API to other consumers, and do not need close control of the HTTP channel, consider using Fable.Remoting.  The raw HTTP model with  scope { }  requires you to construct routes manually and does not guarantee that the client and endpoint have the same contract (you have to specify it on both sides yourself), but gives you total control over the routing and verbs used. If you have a public API that is exposed not just to your own application but to third-parties, or you need more fine grained control over your routes and data, you should stick with this approach.",
             "title": "When should I use raw HTTP vs Fable Remoting?"
-        },
-        {
-            "location": "/safe-template/",
-            "text": "",
-            "title": "The SAFE template"
         },
         {
             "location": "/learning/",

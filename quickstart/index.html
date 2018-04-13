@@ -267,6 +267,27 @@
   
 
 
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Getting Started
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Getting Started
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
   <li class="md-nav__item md-nav__item--active">
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
@@ -319,6 +340,23 @@
     
   </li>
 
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../safe-template/" title="The SAFE template" class="md-nav__link">
+      The SAFE template
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
     
       
       
@@ -359,18 +397,6 @@
   <li class="md-nav__item">
     <a href="../client-server/" title="Client Server communication" class="md-nav__link">
       Client Server communication
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../safe-template/" title="The SAFE template" class="md-nav__link">
-      The SAFE template
     </a>
   </li>
 
@@ -496,13 +522,12 @@
 <ol>
 <li>Create a new directory on your machine</li>
 <li>Open a command prompt</li>
-<li>Enter <code>dotnet new -i SAFE.Template</code> to install the <a href="https://github.com/SAFE-Stack/SAFE-template">SAFE project template</a> (you only need to do this once!)</li>
+<li>Enter <code>dotnet new -i SAFE.Template</code> to install the <a href="../safe-template/">SAFE project template</a> (you only need to do this once!)</li>
 <li>Enter <code>dotnet new SAFE -lang F#</code> to create a new SAFE project</li>
 <li>Enter <code>build.cmd run</code> (Windows) or <code>./build.sh run</code> (Linux / OSX)</li>
 </ol>
-<p>Congratulations! After a short delay, you'll be presented with a SAFE application running in your browser! </p>
-<p>The app is already running in development mode and watches your project for changes. Whenever you save a file in the client project it will refresh the browser automatically. If you save a file in the server project it will restart the server in the background.</p>
-<p>Tip: Take a look at the <a href="https://github.com/SAFE-Stack/SAFE-template#template-options">template options</a>. There are many predefined options to choose from, like server technology or client/server communication technology.</p>
+<p>Congratulations! After a short delay, you'll be presented with a basic SAFE application running in your browser! The app will by default run in "development mode", which means it automatically watches your project for changes. Whenever you save a file in the client project it will refresh the browser <strong>automatically</strong>; if you save a file in the server project it will restart the server in the background.</p>
+<p>Tip: Take a look at the <a href="../safe-template/#template-options">template options</a>. There are several ways to customise the default application, including server technology and client/server communication technology.</p>
                 
                   
                 
@@ -551,7 +576,7 @@
 
         <!-- Link to next page -->
         
-          <a href="../overview/" title="SAFE Stack Overview"
+          <a href="../safe-template/" title="The SAFE template"
               class="md-flex md-footer-nav__link md-footer-nav__link--next"
               rel="next">
             <div class="md-flex__cell md-flex__cell--stretch
@@ -560,7 +585,7 @@
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                SAFE Stack Overview
+                The SAFE template
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
