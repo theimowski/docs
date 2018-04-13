@@ -7,7 +7,7 @@
         },
         {
             "location": "/intro/",
-            "text": "What is SAFE?\n\n\nThe SAFE stack is an \nopen-source, free, flexible\n end-to-end, \nfunctional-first\n stack for \ncloud-ready web applications\n that emphasizes \ntype-safe programming\n.\n\n\nThe SAFE stack allows you to \ndevelop web applications\n almost entirely in \nF#\n, without needing to compromise and shoehorn your codebase into an object-oriented framework or library, and without needing you to be an expert in CSS or HTML to create compelling, rich client-side web applications.\n\n\nThe SAFE stack is made up of four components:\n\n\n\n\nA \nweb server\n running on .NET Core for hosting back-end services in F#\n\n\nA \nhosting platform\n that provides simple, scalable deployment models plus associated platform services for application developers\n\n\nA mechanism to run F# in the web browser for \nclient-side delivery of F#\n\n\nAn F# programming model for \nclient-side user interfaces\n\n\n\n\nWhy SAFE?\n\n\nSAFE provides developers with a simple and consistent programming model for developing rich, scalable web-enabled applications that can run on multiple platforms. SAFE takes advantage of F#'s mix of a functional-first experience backed by the powerful and mature .NET framework to provide a type-safe, reliable experience that leads to the \"pit of success\".\n\n\n\n\nCreate client / server applications entirely in F#\n\n\nRe-use development skills on client and server\n\n\nRapidly create rich client-side web applications with no Javascript knowledge\n\n\nRuns on the latest .NET Core (and tested daily by Microsoft)\n\n\nRapid development cycle with support for hot module reloading\n\n\nInteract with native Javascript libraries whenever needed\n\n\nCreate client-side applications purely in F#, with full type checking for safety\n\n\nSeamlessly share code between client and server",
+            "text": "What is SAFE?\n\n\nThe SAFE stack is an \nopen-source, free, flexible\n end-to-end, \nfunctional-first\n stack for \ncloud-ready web applications\n that emphasizes \ntype-safe programming\n.\n\n\nThe SAFE stack allows you to \ndevelop web applications\n almost entirely in \nF#\n, without needing to compromise and shoehorn your codebase into an object-oriented framework or library, and without needing you to be an expert in CSS or HTML to create compelling, rich client-side web applications.\n\n\nThe SAFE stack is made up of four components:\n\n\n\n\nA \nweb server\n running on .NET Core for hosting back-end services in F#\n\n\nA \nhosting platform\n that provides simple, scalable deployment models plus associated platform services for application developers\n\n\nA mechanism to run F# in the web browser for \nclient-side delivery of F#\n\n\nAn F# programming model for \nclient-side user interfaces\n\n\n\n\nWhy SAFE?\n\n\nSAFE provides developers with a simple and consistent programming model for developing rich, scalable web-enabled applications that can run on multiple platforms. SAFE takes advantage of F#'s mix of a functional-first experience backed by the powerful and mature .NET framework to provide a type-safe, reliable experience that leads to the \"pit of success\".\n\n\n\n\nCreate client / server applications entirely in F#\n\n\nRe-use development skills on client and server\n\n\nRapidly create rich client-side web applications with no Javascript knowledge\n\n\nRuns on the latest .NET Core (and tested daily by Microsoft)\n\n\nRapid development cycle with support for \nhot module replacement\n\n\nInteract with native Javascript libraries whenever needed\n\n\nCreate client-side applications purely in F#, with full type checking for safety\n\n\nSeamlessly share code between client and server",
             "title": "Introduction"
         },
         {
@@ -17,7 +17,7 @@
         },
         {
             "location": "/intro/#why-safe",
-            "text": "SAFE provides developers with a simple and consistent programming model for developing rich, scalable web-enabled applications that can run on multiple platforms. SAFE takes advantage of F#'s mix of a functional-first experience backed by the powerful and mature .NET framework to provide a type-safe, reliable experience that leads to the \"pit of success\".   Create client / server applications entirely in F#  Re-use development skills on client and server  Rapidly create rich client-side web applications with no Javascript knowledge  Runs on the latest .NET Core (and tested daily by Microsoft)  Rapid development cycle with support for hot module reloading  Interact with native Javascript libraries whenever needed  Create client-side applications purely in F#, with full type checking for safety  Seamlessly share code between client and server",
+            "text": "SAFE provides developers with a simple and consistent programming model for developing rich, scalable web-enabled applications that can run on multiple platforms. SAFE takes advantage of F#'s mix of a functional-first experience backed by the powerful and mature .NET framework to provide a type-safe, reliable experience that leads to the \"pit of success\".   Create client / server applications entirely in F#  Re-use development skills on client and server  Rapidly create rich client-side web applications with no Javascript knowledge  Runs on the latest .NET Core (and tested daily by Microsoft)  Rapid development cycle with support for  hot module replacement  Interact with native Javascript libraries whenever needed  Create client-side applications purely in F#, with full type checking for safety  Seamlessly share code between client and server",
             "title": "Why SAFE?"
         },
         {
@@ -188,6 +188,31 @@
         {
             "location": "/server-side-rendering/#further-reading",
             "text": "For more details can be found in the  SSR tutorial  The  SAFE-BookStore  sample project uses SSR",
+            "title": "Further reading"
+        },
+        {
+            "location": "/hot-module-replacement/",
+            "text": "What is Hot Module Replacement?\n\n\nHot Module Replacement (HMR) allows to update the UI of an application while it is running, without a full reload. In SAFE stack apps, this can dramatically speed up the development for web and mobile GUIs, since there is no need to \"stop\" and \"reload\" and application. Instead, you can make changes to your views and have them immediately update in the browser, without the need to restart the application.\n\n\nHow does it work?\n\n\nIn case of web development, the \nwebpack\n development server will automatically refresh the changed parts of your \nelmish\n views whenever you save a file. Alternatively, in the case of mobile app development, this is achieved through \nReact Native\n's own bundler.\n\n\nWhy does it work so well with SAFE?\n\n\nSince SAFE uses the Model-View-Update architecture with immutable models, the application state only changes when a message is processed; this fits the HMR model very nicely.\n\n\nFurther reading\n\n\n\n\nHot Module Replacement\n via webpack\n\n\nIntroducing Hot Reloading\n in React Native",
+            "title": "Hot Module Replacment"
+        },
+        {
+            "location": "/hot-module-replacement/#what-is-hot-module-replacement",
+            "text": "Hot Module Replacement (HMR) allows to update the UI of an application while it is running, without a full reload. In SAFE stack apps, this can dramatically speed up the development for web and mobile GUIs, since there is no need to \"stop\" and \"reload\" and application. Instead, you can make changes to your views and have them immediately update in the browser, without the need to restart the application.",
+            "title": "What is Hot Module Replacement?"
+        },
+        {
+            "location": "/hot-module-replacement/#how-does-it-work",
+            "text": "In case of web development, the  webpack  development server will automatically refresh the changed parts of your  elmish  views whenever you save a file. Alternatively, in the case of mobile app development, this is achieved through  React Native 's own bundler.",
+            "title": "How does it work?"
+        },
+        {
+            "location": "/hot-module-replacement/#why-does-it-work-so-well-with-safe",
+            "text": "Since SAFE uses the Model-View-Update architecture with immutable models, the application state only changes when a message is processed; this fits the HMR model very nicely.",
+            "title": "Why does it work so well with SAFE?"
+        },
+        {
+            "location": "/hot-module-replacement/#further-reading",
+            "text": "Hot Module Replacement  via webpack  Introducing Hot Reloading  in React Native",
             "title": "Further reading"
         },
         {

@@ -54,6 +54,12 @@
     </url>
         
     <url>
+     <loc>http://safe-stack.github.io/docs//hot-module-replacement/</loc>
+     <lastmod>2018-04-13</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
      <loc>http://safe-stack.github.io/docs//learning/</loc>
      <lastmod>2018-04-13</lastmod>
      <changefreq>daily</changefreq>

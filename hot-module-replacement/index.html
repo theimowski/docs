@@ -13,7 +13,7 @@
         <meta name="description" content="Documentation for SAFE">
       
       
-        <link rel="canonical" href="http://safe-stack.github.io/docs/learning/">
+        <link rel="canonical" href="http://safe-stack.github.io/docs/hot-module-replacement/">
       
       
         <meta name="author" content="SAFE Stack">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Learning Resources - SAFE Documentation</title>
+        <title>Hot Module Replacment - SAFE Documentation</title>
       
     
     
@@ -99,7 +99,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
-      <a href="#tutorials" tabindex="1" class="md-skip">
+      <a href="#what-is-hot-module-replacement" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -125,7 +125,7 @@
                 SAFE Documentation
               </span>
               <span class="md-header-nav__topic">
-                Learning Resources
+                Hot Module Replacment
               </span>
             
           
@@ -369,18 +369,6 @@
           
           
 
-
-  <li class="md-nav__item">
-    <a href="../hot-module-replacement/" title="Hot Module Replacment" class="md-nav__link">
-      Hot Module Replacment
-    </a>
-  </li>
-
-        
-          
-          
-          
-
   
 
 
@@ -390,11 +378,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        Learning Resources
+        Hot Module Replacment
       </label>
     
-    <a href="./" title="Learning Resources" class="md-nav__link md-nav__link--active">
-      Learning Resources
+    <a href="./" title="Hot Module Replacment" class="md-nav__link md-nav__link--active">
+      Hot Module Replacment
     </a>
     
       
@@ -406,83 +394,29 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#tutorials" title="Tutorials" class="md-nav__link">
-    Tutorials
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#safe-dojo" title="SAFE Dojo" class="md-nav__link">
-    SAFE Dojo
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#safe-samples" title="SAFE Samples" class="md-nav__link">
-    SAFE Samples
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#safe-bookstore" title="SAFE Bookstore" class="md-nav__link">
-    SAFE Bookstore
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#safe-confplanner" title="SAFE ConfPlanner" class="md-nav__link">
-    SAFE ConfPlanner
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#safe-search" title="SAFE Search" class="md-nav__link">
-    SAFE Search
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#safe-chat" title="SAFE Chat" class="md-nav__link">
-    SAFE Chat
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#safe-nightwatch" title="SAFE Nightwatch" class="md-nav__link">
-    SAFE Nightwatch
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#videos" title="Videos" class="md-nav__link">
-    Videos
+  <a href="#what-is-hot-module-replacement" title="What is Hot Module Replacement?" class="md-nav__link">
+    What is Hot Module Replacement?
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#other-resources" title="Other Resources" class="md-nav__link">
-    Other Resources
+  <a href="#how-does-it-work" title="How does it work?" class="md-nav__link">
+    How does it work?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-does-it-work-so-well-with-safe" title="Why does it work so well with SAFE?" class="md-nav__link">
+    Why does it work so well with SAFE?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-reading" title="Further reading" class="md-nav__link">
+    Further reading
   </a>
   
 </li>
@@ -495,6 +429,18 @@
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../learning/" title="Learning Resources" class="md-nav__link">
+      Learning Resources
+    </a>
   </li>
 
         
@@ -546,83 +492,29 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#tutorials" title="Tutorials" class="md-nav__link">
-    Tutorials
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#safe-dojo" title="SAFE Dojo" class="md-nav__link">
-    SAFE Dojo
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#safe-samples" title="SAFE Samples" class="md-nav__link">
-    SAFE Samples
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#safe-bookstore" title="SAFE Bookstore" class="md-nav__link">
-    SAFE Bookstore
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#safe-confplanner" title="SAFE ConfPlanner" class="md-nav__link">
-    SAFE ConfPlanner
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#safe-search" title="SAFE Search" class="md-nav__link">
-    SAFE Search
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#safe-chat" title="SAFE Chat" class="md-nav__link">
-    SAFE Chat
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#safe-nightwatch" title="SAFE Nightwatch" class="md-nav__link">
-    SAFE Nightwatch
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#videos" title="Videos" class="md-nav__link">
-    Videos
+  <a href="#what-is-hot-module-replacement" title="What is Hot Module Replacement?" class="md-nav__link">
+    What is Hot Module Replacement?
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#other-resources" title="Other Resources" class="md-nav__link">
-    Other Resources
+  <a href="#how-does-it-work" title="How does it work?" class="md-nav__link">
+    How does it work?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-does-it-work-so-well-with-safe" title="Why does it work so well with SAFE?" class="md-nav__link">
+    Why does it work so well with SAFE?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-reading" title="Further reading" class="md-nav__link">
+    Further reading
   </a>
   
 </li>
@@ -643,34 +535,22 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/SAFE-Stack/docs/edit/master/docs/learning.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/SAFE-Stack/docs/edit/master/docs/hot-module-replacement.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>Learning Resources</h1>
+                  <h1>Hot Module Replacment</h1>
                 
-                <p>This section contains useful repositories that allow you to learn more about the SAFE stack, at your own pace.</p>
-<h2 id="tutorials">Tutorials</h2>
-<h3 id="safe-dojo"><a href="https://github.com/CompositionalIT/SAFE-Dojo/">SAFE Dojo</a></h3>
-<p>This dojo is a guided set of tasks designed to give you hands-on experience with the client and server components of the SAFE stack. You'll create server-side routes, client side UI and shared validation logic as you create a mashup application to provide details on UK locations.</p>
-<p>The dojo takes around 90 minutes to complete if you have never worked with the stack before.</p>
-<h2 id="safe-samples">SAFE Samples</h2>
-<p>The following example repositories (and more!) can be found in the official <a href="https://github.com/SAFE-Stack">SAFE Stack</a> organisational GitHub page.</p>
-<h3 id="safe-bookstore"><a href="https://github.com/SAFE-Stack/SAFE-BookStore">SAFE Bookstore</a></h3>
-<p>This sample demonstrates many of the useful features of a larger SAFE application, including login authentication using JWT tokens, automated deployment via Docker and SEO support with urls for pages. It also includes an example of using Azure Storage tables as a persistence store.</p>
-<h3 id="safe-confplanner"><a href="https://github.com/SAFE-Stack/SAFE-ConfPlanner">SAFE ConfPlanner</a></h3>
-<p>This sample demonstrates how to build and share a complex domain model in SAFE across client and server, along with the use of websockets for a "reactive" UI support push notifications. It also demonstrates the use of F#'s flexible mailbox processors to implement an event-driven architecture.</p>
-<h3 id="safe-search"><a href="https://github.com/SAFE-Stack/SAFE-Search">SAFE Search</a></h3>
-<p>This repository shows how to use Azure services to implement a SAFE application that supports searching over multiple data sources with support for find-ahead typing and throttling. The application uses a combination of Azure Search and Azure Storage Tables to construct a large search index that can rapidly find results in a number of ways.</p>
-<h3 id="safe-chat"><a href="https://github.com/SAFE-Stack/SAFE-Chat">SAFE Chat</a></h3>
-<p>This application is a real-time chat application built on SAFE that uses the <a href="https://getakka.net/">AKKA framework</a> to manage actors that represent chat users, including Akka Streams and the Akkling F# library.</p>
-<h3 id="safe-nightwatch"><a href="https://github.com/SAFE-Stack/SAFE-Nightwatch">SAFE Nightwatch</a></h3>
-<p>This application is a sample mobile application using the <a href="https://facebook.github.io/react-native/">React Native</a> library, built on top of the SAFE stack. React Native permits a very similar programming when writing SAFE applications as browser applications, so the experience should be very familiar to you.</p>
-<h2 id="videos">Videos</h2>
+                <h2 id="what-is-hot-module-replacement">What is Hot Module Replacement?</h2>
+<p>Hot Module Replacement (HMR) allows to update the UI of an application while it is running, without a full reload. In SAFE stack apps, this can dramatically speed up the development for web and mobile GUIs, since there is no need to "stop" and "reload" and application. Instead, you can make changes to your views and have them immediately update in the browser, without the need to restart the application.</p>
+<h2 id="how-does-it-work">How does it work?</h2>
+<p>In case of web development, the <a href="https://webpack.js.org/">webpack</a> development server will automatically refresh the changed parts of your <a href="https://github.com/fable-elmish/elmish">elmish</a> views whenever you save a file. Alternatively, in the case of mobile app development, this is achieved through <a href="https://facebook.github.io/react-native/">React Native</a>'s own bundler.</p>
+<h2 id="why-does-it-work-so-well-with-safe">Why does it work so well with SAFE?</h2>
+<p>Since SAFE uses the Model-View-Update architecture with immutable models, the application state only changes when a message is processed; this fits the HMR model very nicely.</p>
+<h2 id="further-reading">Further reading</h2>
 <ul>
-<li><a href="https://skillsmatter.com/skillscasts/11308-safe-apps-with-f-web-stack">SAFE apps with F# web stack</a> at F# Exchange 2018 (Tomasz Heimowski)</li>
-<li><a href="https://www.youtube.com/watch?v=fmaPeUBWZuM">Modern app development with Fable and React Native</a> at NDC Oslo 2017 (Steffen Forkmann)</li>
+<li><a href="https://webpack.js.org/concepts/hot-module-replacement/">Hot Module Replacement</a> via webpack</li>
+<li><a href="https://facebook.github.io/react-native/blog/2016/03/24/introducing-hot-reloading.html">Introducing Hot Reloading</a> in React Native</li>
 </ul>
-<h2 id="other-resources">Other Resources</h2>
                 
                   
                 
@@ -697,8 +577,8 @@
 
         <!-- Link to previous page -->
         
-          <a href="../hot-module-replacement/"
-              title="Hot Module Replacment"
+          <a href="../server-side-rendering/"
+              title="Server Side rendering"
               class="md-flex md-footer-nav__link md-footer-nav__link--prev"
               rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -711,7 +591,7 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Hot Module Replacment
+                Server Side rendering
               </span>
             </div>
           </a>
@@ -719,7 +599,7 @@
 
         <!-- Link to next page -->
         
-          <a href="../support/" title="Support"
+          <a href="../learning/" title="Learning Resources"
               class="md-flex md-footer-nav__link md-footer-nav__link--next"
               rel="next">
             <div class="md-flex__cell md-flex__cell--stretch
@@ -728,7 +608,7 @@
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Support
+                Learning Resources
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
