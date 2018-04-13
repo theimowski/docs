@@ -390,8 +390,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#why-use-ssr" title="Why use SSR?" class="md-nav__link">
-    Why use SSR?
+  <a href="#why-using-ssr" title="Why using SSR?" class="md-nav__link">
+    Why using SSR?
   </a>
   
     <nav class="md-nav">
@@ -418,6 +418,20 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#server-side-rendering-in-safe-stack" title="Server-Side Rendering in SAFE stack" class="md-nav__link">
+    Server-Side Rendering in SAFE stack
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-reading" title="Further reading" class="md-nav__link">
+    Further reading
+  </a>
   
 </li>
       
@@ -500,8 +514,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#why-use-ssr" title="Why use SSR?" class="md-nav__link">
-    Why use SSR?
+  <a href="#why-using-ssr" title="Why using SSR?" class="md-nav__link">
+    Why using SSR?
   </a>
   
     <nav class="md-nav">
@@ -531,6 +545,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#server-side-rendering-in-safe-stack" title="Server-Side Rendering in SAFE stack" class="md-nav__link">
+    Server-Side Rendering in SAFE stack
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-reading" title="Further reading" class="md-nav__link">
+    Further reading
+  </a>
+  
+</li>
+      
       
       
       
@@ -556,8 +584,8 @@
 <p>Server-Side Rendering (SSR) means some part of your app's code can run on both the server and the client. 
 For <a href="https://reactjs.org/">React</a> this means that you can render your components to HTML on the server side (usually via a <a href="https://nodejs.org/en/">node.js server</a>). This allows for better Search Engine Optimization and gives faster initial response, especially on mobile devices. The browser will receive a static HTML site and can start updating the UI immediately.
 React's bundle code will be downloaded asynchronously and when then download completes, the Client-Side JavaScript will take over via <a href="https://reactjs.org/docs/react-dom.html#hydrate">React's hydrate</a> functionality.</p>
-<p>In the JavaScript ecosystem this is also as known as an "isomorphic" or "universal" app. In SAFE, Server-Side Rendering can be done with <a href="https://github.com/fable-compiler/fable-react">fable-react</a>.</p>
-<h3 id="why-use-ssr">Why use SSR?</h3>
+<p>In the JavaScript ecosystem this is also as known as an "isomorphic" or "universal" app.</p>
+<h3 id="why-using-ssr">Why using SSR?</h3>
 <h4 id="pros">Pros</h4>
 <ul>
 <li>Better Search Engine Optimization (SEO), as the web crawlers will directly see the fully rendered HTML page</li>
@@ -568,6 +596,13 @@ React's bundle code will be downloaded asynchronously and when then download com
 <li>Some development constraints. Browser-specific code needs compiler directives to be ignored when running on the server.</li>
 <li>Build and deployment processes will become more complicated.</li>
 <li>More server-side load.</li>
+</ul>
+<h2 id="server-side-rendering-in-safe-stack">Server-Side Rendering in SAFE stack</h2>
+<p>In SAFE, Server-Side Rendering can be done with <a href="https://github.com/fable-compiler/fable-react">fable-react</a>. It's approach is a little different from those you might have seen in the JavaScript ecosysten, it is a pure F# approach. You can render your <a href="https://github.com/fable-elmish/elmish">Elmish</a> views directly on .NET Core, with all benefits of the .NET Core runtime.</p>
+<h2 id="further-reading">Further reading</h2>
+<ul>
+<li>For more details can be found in the <a href="https://github.com/fable-compiler/fable-react/blob/master/docs/server-side-rendering.md">SSR tutorial</a></li>
+<li>The <a href="https://github.com/SAFE-Stack/SAFE-BookStore">SAFE-BookStore</a> sample project uses SSR</li>
 </ul>
                 
                   
