@@ -87,12 +87,17 @@
         },
         {
             "location": "/overview/",
-            "text": "The SAFE acronym is made up of four separate components:\n\n\n\n\nS\naturn for back-end services in F#\n\n\nA\nzure as a hosting platform plus associated platform services\n\n\nF\nable for running F# in the web browser\n\n\nE\nlmish for client-side user interfaces\n\n\n\n\n\n\nSaturn\n\n\nThe \nGiraffe\n framework provides an F#-friendly, flexible pipeline for creating server-side web applications, built on top of ASP .NET Core - a high performance, rock-solid web server. The Saturn library builds on top of this solid foundation, and provides a set of \noptional\n abstractions which make configuring web applications and constructing complex routes extremely easy to achieve.\n\n\nBoth Saturn and Giraffe can host RESTful API endpoints, or drive static websites, or server-generated content, all inside an easy-to-learn functional programming model.\n\n\nMicrosoft Azure\n\n\nAzure is a comprehensive set of cloud services that developers and IT professionals use to build, deploy and manage applications through a global network of data centres. Integrated tools, DevOps and a marketplace support you in efficiently building anything from simple mobile apps to Internet-scale solutions.\n\n\nFable\n\n\nFable is an F# to JavaScript compiler powered by Babel, designed to produce readable and standard code. Fable allows you to create applications for the browser written entirely in F#, whilst also allowing you to interact with native Javascript as needed.\n\n\nElmish\n\n\nThe Elmish model allows you to construct user interfaces running in the browser using a functional programming model. Modelled on the Elm application model, Elmish uses the Model-View-Update paradigm to allow you to write applications that are simple to reason about. Elmish sits on top of the \nReact\n framework.\n\n\nPlease also feel free to read this \nblog series\n on the Compositional IT website for more details on the history of SAFE.\n\n\nAre there alternative components in the SAFE stack?\n\n\nYes, absolutely. The above components are what we recommended as the default SAFE stack, but you can of course replace the components with alternatives as you see fit. Here are some examples:\n\n\n\n\nSuave\n is a complete web server and programming model designed for F# that is similar to that of Giraffe.\n\n\nFreya\n is an alternative F#-first web stack which has a pluggable runtime model which allows it to be hosted in a variety of web servers including ASP .NET Core.\n\n\nAWS\n is Amazon's cloud compute offering, providing a large number of services available globally.\n\n\nWebSharper\n is a complete end-to-end programming stack, comprising both server- and client-side components. It supports both F# and C# programming models.",
+            "text": "SAFE Stack components\n\n\nThe SAFE acronym is made up of four separate components:\n\n\n\n\nS\naturn\n for back-end services in F#\n\n\nA\nzure\n as a hosting platform plus associated platform services\n\n\nF\nable\n for running F# in the web browser\n\n\nE\nlmish\n for client-side user interfaces\n\n\n\n\n\n\nSaturn\n\n\nThe Saturn library builds on top of the solid foundation of both the F#-friendly \nGiraffe\n and the high performance, rock-solid \nASP .NET Core\n web server to provide a set of optional abstractions which make configuring web applications and constructing complex routes extremely easy to achieve.\n\n\nSaturn can host RESTful API endpoints, drive static websites or server-generated content, all inside an easy-to-learn functional programming model.\n\n\nMicrosoft Azure\n\n\nAzure is a comprehensive set of cloud services that developers and IT professionals use to build, deploy and manage applications through a global network of data centres. Integrated tools, DevOps and a marketplace support you in efficiently building anything from simple mobile apps to Internet-scale solutions.\n\n\nFable\n\n\nFable is an F# to JavaScript compiler powered by Babel, designed to produce readable and standard code. Fable allows you to create applications for the browser written entirely in F#, whilst also allowing you to interact with native Javascript as needed.\n\n\nElmish\n\n\nThe Elmish model allows you to construct user interfaces running in the browser using a functional programming model. Modelled on the Elm application model, Elmish uses the Model-View-Update paradigm to allow you to write applications that are simple to reason about. Elmish sits on top of the \nReact\n framework.\n\n\nFurther reading\n\n\nPlease also feel free to read this \nblog series\n on the Compositional IT website for more details on the history of SAFE.\n\n\nAre there alternative components in the SAFE stack?\n\n\nYes, absolutely. The above components are what we recommended as the default SAFE stack, but you can of course replace the components with alternatives as you see fit. Here are some examples:\n\n\n\n\nSuave\n is a complete web server and programming model designed for F# that is similar to that of Giraffe.\n\n\nFreya\n is an alternative F#-first web stack which has a pluggable runtime model which allows it to be hosted in a variety of web servers including ASP .NET Core.\n\n\nAWS\n is Amazon's cloud compute offering, providing a large number of services available globally.\n\n\nWebSharper\n is a complete end-to-end programming stack, comprising both server- and client-side components. It supports both F# and C# programming models.",
             "title": "SAFE Stack Overview"
         },
         {
+            "location": "/overview/#safe-stack-components",
+            "text": "The SAFE acronym is made up of four separate components:   S aturn  for back-end services in F#  A zure  as a hosting platform plus associated platform services  F able  for running F# in the web browser  E lmish  for client-side user interfaces",
+            "title": "SAFE Stack components"
+        },
+        {
             "location": "/overview/#saturn",
-            "text": "The  Giraffe  framework provides an F#-friendly, flexible pipeline for creating server-side web applications, built on top of ASP .NET Core - a high performance, rock-solid web server. The Saturn library builds on top of this solid foundation, and provides a set of  optional  abstractions which make configuring web applications and constructing complex routes extremely easy to achieve.  Both Saturn and Giraffe can host RESTful API endpoints, or drive static websites, or server-generated content, all inside an easy-to-learn functional programming model.",
+            "text": "The Saturn library builds on top of the solid foundation of both the F#-friendly  Giraffe  and the high performance, rock-solid  ASP .NET Core  web server to provide a set of optional abstractions which make configuring web applications and constructing complex routes extremely easy to achieve.  Saturn can host RESTful API endpoints, drive static websites or server-generated content, all inside an easy-to-learn functional programming model.",
             "title": "Saturn"
         },
         {
@@ -107,8 +112,13 @@
         },
         {
             "location": "/overview/#elmish",
-            "text": "The Elmish model allows you to construct user interfaces running in the browser using a functional programming model. Modelled on the Elm application model, Elmish uses the Model-View-Update paradigm to allow you to write applications that are simple to reason about. Elmish sits on top of the  React  framework.  Please also feel free to read this  blog series  on the Compositional IT website for more details on the history of SAFE.",
+            "text": "The Elmish model allows you to construct user interfaces running in the browser using a functional programming model. Modelled on the Elm application model, Elmish uses the Model-View-Update paradigm to allow you to write applications that are simple to reason about. Elmish sits on top of the  React  framework.",
             "title": "Elmish"
+        },
+        {
+            "location": "/overview/#further-reading",
+            "text": "Please also feel free to read this  blog series  on the Compositional IT website for more details on the history of SAFE.",
+            "title": "Further reading"
         },
         {
             "location": "/overview/#are-there-alternative-components-in-the-safe-stack",
@@ -116,92 +126,132 @@
             "title": "Are there alternative components in the SAFE stack?"
         },
         {
-            "location": "/client-server/",
-            "text": "One of SAFE's best features is the ability to share \ndata\n, \ntypes\n and \ncode\n across client and server. This page illustrates the different ways this can be achieved.\n\n\nSharing Types\n\n\nSharing your domain types and contracts between client and server is extremely simple. Thanks to Fable's excellent F# transpilation into Javascript, you can use all standard F# language features such as Records, Tuples and Discriminated Unions without worry. To share types across both your client and server project, first create a file in your repository called e.g \nShared.fs\n.\n\n\n\nThen, create types in the file as needed e.g\n\n\ntype Customer = { Name : string }\n\n\n\n\nReference this file to your server project. You can now reference those types in the server.\n\n\n<Project Sdk=\"Microsoft.NET.Sdk\">\n    ...\n    <ItemGroup>\n        <Compile Include=\"../Shared/Shared.fs\" />\n    </ItemGroup>\n    ...\n</Project>\n\n\n\n\nFinally, reference this file to your client project (as above). You can now reference those types in the client; types will be compiled into Javascript types and seamlessly translated for you.\n\n\nSharing Code\n\n\nYou can also share code using the same mechanism. This is extremely useful for e.g shared validation or business logic that needs to occur on both client and server.\n\n\nFable will translate your functions into native Javascript, and will even translate many calls to the .NET BCL into javascript! You can read more about this \non the Fable website\n.\n\n\nSharing Data\n\n\nSharing data can be achieved in two main ways in SAFE: through the \nSaturn\n API directly, or via the \nFable.Remoting\n library.\n\n\nSharing data with Saturn\n\n\nSharing data using Saturn is very simple. Start by creating a function in your server that returns some data:\n\n\nlet loadCustomersFromDb() =\n    [ { Name = \"Joe Bloggs\" } ]\n\n\n\n\nNext, create a method which returns the data as JSON within Giraffe's HTTP context.\n\n\n/// Returns the results of loadCustomersFromDb as JSON.\nlet getCustomers next ctx =\n    json (loadCustomersFromDb()) next ctx\n\n\n\n\nYou can opt to combine both of the above functions into one, depending on your preferences, but it's often good practice to separate your data access from serving data in HTTP endpoints.\n\n\nAlso note the \nnext\n and \nctx\n arguments. These are used by Giraffe as part of its \nHTTP pipeline\n and are required by the \njson\n function.\n\n\nNow expose the api method using \nSaturn's\n \nscope\n construct and add the scope to your overall application scope:\n\n\nlet myApis = scope {\n    get \"/api/customers/\" getCustomers\n}\n\n\n\n\nFor simple endpoints you may elect to embed the API call directly in the scope (and use partial application to omit the \nnext\n and \nctx\n arguments):\n\n\nlet myApis = scope {\n    get \"/api/customers/\" (json (loadCustomersFromDb()))\n}\n\n\n\n\nFinally, call the endpoint from your client application.\n\n\npromise {    \n    let! customers = Fetch.fetchAs<Customer array> (sprintf \"api/customers\") []\n    // do more with customers here...\n}\n\n\n\n\nNote the use of the \npromise { }\n computation expression. This functions like \nasync { }\n blocks that you already know, whilst the \nfetchAs\n function automatically deserializes the JSON back into a \nCustomer\n array.\n\n\nTurning on Fable's JSON Converter\n\n\nBy default, serialization between Fable and Giraffe \nis not compatible\n. In order to fix this, you must replace the JSON converter in Giraffe with Fable's own \nIJsonSerializer\n.\n\n\nIf you are using the dotnet SAFE Template, this will automatically be done for you - see the \nconfig\n function in \nServer.fs\n.\n\n\nSharing data using Fable.Remoting\n\n\nAs an alternative to raw HTTP, you can also use the \nFable.Remoting\n library, which provides an RPC-style mechanism for calling server endpoints.\n\n\nIn our case, instead of creating a \nscope { }\n on the server and using \nfetch\n on the client, you create a simple \nprotocol\n which contains methods exposed by the server:\n\n\ntype ICustomer = {\n    customers : unit -> Async<Customer array>\n}\n\nlet server : ICustomer = {\n    customers = fun () -> async { return loadCustomersFromDb() }\n}\n\n\n\n\nOn the client, you need only create a proxy for the protocol and then can call methods on it directly.\n\n\nasync {\n    let server = Proxy.remoting<ICustomer> {()}\n    let! customers = server.customers()\n    /// ...\n}\n\n\n\n\nNotice here, there is no need to create routes, or worry about HTTP verbs, or even involve yourself with the Giraffe pipeline.\n\n\nWhen should I use raw HTTP vs Fable Remoting?\n\n\nFable Remoting provides an excellent way to quickly get up and running with the SAFE stack. You can rapidly create contracts between client / server and have guaranteed contracts between both client and server. If you're using a \"closed\" app without exposing an API to other consumers, and do not need close control of the HTTP channel, consider using Fable.Remoting.\n\n\nThe raw HTTP model with \nscope { }\n requires you to construct routes manually and does not guarantee that the client and endpoint have the same contract (you have to specify it on both sides yourself), but gives you total control over the routing and verbs used. If you have a public API that is exposed not just to your own application but to third-parties, or you need more fine grained control over your routes and data, you should stick with this approach.",
+            "location": "/safe-saturn/",
+            "text": "Saturn\n in SAFE\n\n\nContent to be added!",
+            "title": "Learn about Saturn"
+        },
+        {
+            "location": "/safe-saturn/#saturn-in-safe",
+            "text": "Content to be added!",
+            "title": "Saturn in SAFE"
+        },
+        {
+            "location": "/safe-azure/",
+            "text": "Azure\n in SAFE\n\n\nContent to be added!",
+            "title": "Learn about Azure"
+        },
+        {
+            "location": "/safe-azure/#azure-in-safe",
+            "text": "Content to be added!",
+            "title": "Azure in SAFE"
+        },
+        {
+            "location": "/safe-fable/",
+            "text": "Fable\n in SAFE\n\n\nContent to be added!",
+            "title": "Learn about Fable"
+        },
+        {
+            "location": "/safe-fable/#fable-in-safe",
+            "text": "Content to be added!",
+            "title": "Fable in SAFE"
+        },
+        {
+            "location": "/safe-elmish/",
+            "text": "Elmish\n in SAFE\n\n\nContent to be added!",
+            "title": "Learn about Elmish"
+        },
+        {
+            "location": "/safe-elmish/#elmish-in-safe",
+            "text": "Content to be added!",
+            "title": "Elmish in SAFE"
+        },
+        {
+            "location": "/feature-client-server/",
+            "text": "One of the most powerful features of SAFE is the ability to seamlessly share \ndata\n, \ntypes\n and \ncode\n across client and server.\n\n\nSharing Types\n\n\nSharing your domain types and contracts between client and server is extremely simple. Thanks to Fable's excellent F# transpilation into Javascript, you can use all standard F# language features such as Records, Tuples and Discriminated Unions without worry. To share types across both your client and server project, first create a file in your repository called e.g \nShared.fs\n.\n\n\n\nThen, create types in the file as needed e.g\n\n\ntype Customer = { Name : string }\n\n\n\n\nReference this file to your server project. You can now reference those types in the server.\n\n\n<Project Sdk=\"Microsoft.NET.Sdk\">\n    ...\n    <ItemGroup>\n        <Compile Include=\"../Shared/Shared.fs\" />\n    </ItemGroup>\n    ...\n</Project>\n\n\n\n\nFinally, reference this file to your client project (as above). You can now reference those types in the client; types will be compiled into Javascript types and seamlessly translated for you.\n\n\nSharing Code\n\n\nYou can also share code using the same mechanism. This is extremely useful for e.g shared validation or business logic that needs to occur on both client and server.\n\n\nFable will translate your functions into native Javascript, and will even translate many calls to the .NET BCL into javascript! You can read more about this \non the Fable website\n.\n\n\nSharing Data\n\n\nSharing data can be achieved in two main ways in SAFE: through the \nSaturn\n API directly, or via the \nFable.Remoting\n library.\n\n\nSharing data with Saturn\n\n\nSharing data using Saturn is very simple. Start by creating a function in your server that returns some data:\n\n\nlet loadCustomersFromDb() =\n    [ { Name = \"Joe Bloggs\" } ]\n\n\n\n\nNext, create a method which returns the data as JSON within Giraffe's HTTP context.\n\n\n/// Returns the results of loadCustomersFromDb as JSON.\nlet getCustomers next ctx =\n    json (loadCustomersFromDb()) next ctx\n\n\n\n\nYou can opt to combine both of the above functions into one, depending on your preferences, but it's often good practice to separate your data access from serving data in HTTP endpoints.\n\n\nAlso note the \nnext\n and \nctx\n arguments. These are used by Giraffe as part of its \nHTTP pipeline\n and are required by the \njson\n function.\n\n\nNow expose the api method using \nSaturn's\n \nscope\n construct and add the scope to your overall application scope:\n\n\nlet myApis = scope {\n    get \"/api/customers/\" getCustomers\n}\n\n\n\n\nFor simple endpoints you may elect to embed the API call directly in the scope (and use partial application to omit the \nnext\n and \nctx\n arguments):\n\n\nlet myApis = scope {\n    get \"/api/customers/\" (json (loadCustomersFromDb()))\n}\n\n\n\n\nFinally, call the endpoint from your client application.\n\n\npromise {    \n    let! customers = Fetch.fetchAs<Customer array> (sprintf \"api/customers\") []\n    // do more with customers here...\n}\n\n\n\n\nNote the use of the \npromise { }\n computation expression. This functions like \nasync { }\n blocks that you already know, whilst the \nfetchAs\n function automatically deserializes the JSON back into a \nCustomer\n array.\n\n\nTurning on Fable's JSON Converter\n\n\nBy default, serialization between Fable and Giraffe \nis not compatible\n. In order to fix this, you must replace the JSON converter in Giraffe with Fable's own \nIJsonSerializer\n.\n\n\nIf you are using the dotnet SAFE Template, this will automatically be done for you - see the \nconfig\n function in \nServer.fs\n.\n\n\nSharing data using Fable.Remoting\n\n\nAs an alternative to raw HTTP, you can also use the \nFable.Remoting\n library, which provides an RPC-style mechanism for calling server endpoints.\n\n\nIn our case, instead of creating a \nscope { }\n on the server and using \nfetch\n on the client, you create a simple \nprotocol\n which contains methods exposed by the server:\n\n\ntype ICustomer = {\n    customers : unit -> Async<Customer array>\n}\n\nlet server : ICustomer = {\n    customers = fun () -> async { return loadCustomersFromDb() }\n}\n\n\n\n\nOn the client, you need only create a proxy for the protocol and then can call methods on it directly.\n\n\nasync {\n    let server = Proxy.remoting<ICustomer> {()}\n    let! customers = server.customers()\n    /// ...\n}\n\n\n\n\nNotice here, there is no need to create routes, or worry about HTTP verbs, or even involve yourself with the Giraffe pipeline.\n\n\nWhen should I use raw HTTP vs Fable Remoting?\n\n\nFable Remoting provides an excellent way to quickly get up and running with the SAFE stack. You can rapidly create contracts between client / server and have guaranteed contracts between both client and server. If you're using a \"closed\" app without exposing an API to other consumers, and do not need close control of the HTTP channel, consider using Fable.Remoting.\n\n\nThe raw HTTP model with \nscope { }\n requires you to construct routes manually and does not guarantee that the client and endpoint have the same contract (you have to specify it on both sides yourself), but gives you total control over the routing and verbs used. If you have a public API that is exposed not just to your own application but to third-parties, or you need more fine grained control over your routes and data, you should stick with this approach.",
             "title": "Client Server communication"
         },
         {
-            "location": "/client-server/#sharing-types",
+            "location": "/feature-client-server/#sharing-types",
             "text": "Sharing your domain types and contracts between client and server is extremely simple. Thanks to Fable's excellent F# transpilation into Javascript, you can use all standard F# language features such as Records, Tuples and Discriminated Unions without worry. To share types across both your client and server project, first create a file in your repository called e.g  Shared.fs .  Then, create types in the file as needed e.g  type Customer = { Name : string }  Reference this file to your server project. You can now reference those types in the server.  <Project Sdk=\"Microsoft.NET.Sdk\">\n    ...\n    <ItemGroup>\n        <Compile Include=\"../Shared/Shared.fs\" />\n    </ItemGroup>\n    ...\n</Project>  Finally, reference this file to your client project (as above). You can now reference those types in the client; types will be compiled into Javascript types and seamlessly translated for you.",
             "title": "Sharing Types"
         },
         {
-            "location": "/client-server/#sharing-code",
+            "location": "/feature-client-server/#sharing-code",
             "text": "You can also share code using the same mechanism. This is extremely useful for e.g shared validation or business logic that needs to occur on both client and server.  Fable will translate your functions into native Javascript, and will even translate many calls to the .NET BCL into javascript! You can read more about this  on the Fable website .",
             "title": "Sharing Code"
         },
         {
-            "location": "/client-server/#sharing-data",
+            "location": "/feature-client-server/#sharing-data",
             "text": "Sharing data can be achieved in two main ways in SAFE: through the  Saturn  API directly, or via the  Fable.Remoting  library.",
             "title": "Sharing Data"
         },
         {
-            "location": "/client-server/#sharing-data-with-saturn",
+            "location": "/feature-client-server/#sharing-data-with-saturn",
             "text": "Sharing data using Saturn is very simple. Start by creating a function in your server that returns some data:  let loadCustomersFromDb() =\n    [ { Name = \"Joe Bloggs\" } ]  Next, create a method which returns the data as JSON within Giraffe's HTTP context.  /// Returns the results of loadCustomersFromDb as JSON.\nlet getCustomers next ctx =\n    json (loadCustomersFromDb()) next ctx  You can opt to combine both of the above functions into one, depending on your preferences, but it's often good practice to separate your data access from serving data in HTTP endpoints.  Also note the  next  and  ctx  arguments. These are used by Giraffe as part of its  HTTP pipeline  and are required by the  json  function.  Now expose the api method using  Saturn's   scope  construct and add the scope to your overall application scope:  let myApis = scope {\n    get \"/api/customers/\" getCustomers\n}  For simple endpoints you may elect to embed the API call directly in the scope (and use partial application to omit the  next  and  ctx  arguments):  let myApis = scope {\n    get \"/api/customers/\" (json (loadCustomersFromDb()))\n}  Finally, call the endpoint from your client application.  promise {    \n    let! customers = Fetch.fetchAs<Customer array> (sprintf \"api/customers\") []\n    // do more with customers here...\n}  Note the use of the  promise { }  computation expression. This functions like  async { }  blocks that you already know, whilst the  fetchAs  function automatically deserializes the JSON back into a  Customer  array.",
             "title": "Sharing data with Saturn"
         },
         {
-            "location": "/client-server/#turning-on-fables-json-converter",
+            "location": "/feature-client-server/#turning-on-fables-json-converter",
             "text": "By default, serialization between Fable and Giraffe  is not compatible . In order to fix this, you must replace the JSON converter in Giraffe with Fable's own  IJsonSerializer .  If you are using the dotnet SAFE Template, this will automatically be done for you - see the  config  function in  Server.fs .",
             "title": "Turning on Fable's JSON Converter"
         },
         {
-            "location": "/client-server/#sharing-data-using-fableremoting",
+            "location": "/feature-client-server/#sharing-data-using-fableremoting",
             "text": "As an alternative to raw HTTP, you can also use the  Fable.Remoting  library, which provides an RPC-style mechanism for calling server endpoints.  In our case, instead of creating a  scope { }  on the server and using  fetch  on the client, you create a simple  protocol  which contains methods exposed by the server:  type ICustomer = {\n    customers : unit -> Async<Customer array>\n}\n\nlet server : ICustomer = {\n    customers = fun () -> async { return loadCustomersFromDb() }\n}  On the client, you need only create a proxy for the protocol and then can call methods on it directly.  async {\n    let server = Proxy.remoting<ICustomer> {()}\n    let! customers = server.customers()\n    /// ...\n}  Notice here, there is no need to create routes, or worry about HTTP verbs, or even involve yourself with the Giraffe pipeline.",
             "title": "Sharing data using Fable.Remoting"
         },
         {
-            "location": "/client-server/#when-should-i-use-raw-http-vs-fable-remoting",
+            "location": "/feature-client-server/#when-should-i-use-raw-http-vs-fable-remoting",
             "text": "Fable Remoting provides an excellent way to quickly get up and running with the SAFE stack. You can rapidly create contracts between client / server and have guaranteed contracts between both client and server. If you're using a \"closed\" app without exposing an API to other consumers, and do not need close control of the HTTP channel, consider using Fable.Remoting.  The raw HTTP model with  scope { }  requires you to construct routes manually and does not guarantee that the client and endpoint have the same contract (you have to specify it on both sides yourself), but gives you total control over the routing and verbs used. If you have a public API that is exposed not just to your own application but to third-parties, or you need more fine grained control over your routes and data, you should stick with this approach.",
             "title": "When should I use raw HTTP vs Fable Remoting?"
         },
         {
-            "location": "/server-side-rendering/",
+            "location": "/feature-ssr/",
             "text": "Server-Side Rendering (SSR) means that some parts of your application code can run on both the server and the client.\nFor \nReact\n this means that you can render your components directly to HTML on the server side (usually via a \nnode.js server\n), which allows for better search engine optimization (SEO) and gives a faster initial response, especially on mobile devices.\n\n\nThe browser typically receives a static HTML site and starts updating the UI immediately;\nReact's bundle code will be downloaded asynchronously and when it completes, the client-side JavaScript will take over via \nReact's hydrate\n functionality. In the JavaScript ecosystem this is also as known as an \"isomorphic\" or \"universal\" app.\n\n\nWhy use SSR?\n\n\nPros\n\n\n\n\nBetter SEO support, as web crawlers will directly see the fully rendered HTML page.\n\n\nFaster time-to-content, especially on slow internet connections or devices.\n\n\n\n\nCons\n\n\n\n\nSome development constraints. Browser-specific code requires some compiler directives to be ignored when running on the server.\n\n\nIncreased complexity of build and deployment processes.\n\n\nIncreased server-side load.\n\n\n\n\nSSR on SAFE\n\n\nIn SAFE, SSR can be done using \nfable-react\n. Its approach is a little different from those you might have seen in the JavaScript ecosystem, as it takes a purely F# approach: you render your \nElmish\n views directly on .NET Core, with all the benefits of the .NET Core runtime.\n\n\nFurther reading\n\n\n\n\nMore details can be found in the \nSSR tutorial\n.\n\n\nThe \nSAFE-BookStore\n sample project uses SSR.",
-            "title": "Server Side rendering"
+            "title": "Server Side Rendering"
         },
         {
-            "location": "/server-side-rendering/#why-use-ssr",
+            "location": "/feature-ssr/#why-use-ssr",
             "text": "",
             "title": "Why use SSR?"
         },
         {
-            "location": "/server-side-rendering/#pros",
+            "location": "/feature-ssr/#pros",
             "text": "Better SEO support, as web crawlers will directly see the fully rendered HTML page.  Faster time-to-content, especially on slow internet connections or devices.",
             "title": "Pros"
         },
         {
-            "location": "/server-side-rendering/#cons",
+            "location": "/feature-ssr/#cons",
             "text": "Some development constraints. Browser-specific code requires some compiler directives to be ignored when running on the server.  Increased complexity of build and deployment processes.  Increased server-side load.",
             "title": "Cons"
         },
         {
-            "location": "/server-side-rendering/#ssr-on-safe",
+            "location": "/feature-ssr/#ssr-on-safe",
             "text": "In SAFE, SSR can be done using  fable-react . Its approach is a little different from those you might have seen in the JavaScript ecosystem, as it takes a purely F# approach: you render your  Elmish  views directly on .NET Core, with all the benefits of the .NET Core runtime.",
             "title": "SSR on SAFE"
         },
         {
-            "location": "/server-side-rendering/#further-reading",
+            "location": "/feature-ssr/#further-reading",
             "text": "More details can be found in the  SSR tutorial .  The  SAFE-BookStore  sample project uses SSR.",
             "title": "Further reading"
         },
         {
-            "location": "/hot-module-replacement/",
+            "location": "/feature-hmr/",
             "text": "Hot Module Replacement (HMR) allows to update the UI of an application while it is running, without a full reload. In SAFE stack apps, this can dramatically speed up the development for web and mobile GUIs, since there is no need to \"stop\" and \"reload\" and application. Instead, you can make changes to your views and have them immediately update in the browser, without the need to restart the application.\n\n\nHow does it work?\n\n\nIn case of web development, the \nwebpack\n development server will automatically refresh the changed parts of your \nelmish\n views whenever you save a file. Alternatively, in the case of mobile app development, this is achieved through \nReact Native\n's own bundler.\n\n\nWhy does it work so well with SAFE?\n\n\nSince SAFE uses the Model-View-Update architecture with immutable models, the application state only changes when a message is processed; this fits the HMR model very nicely.\n\n\nFurther reading\n\n\n\n\nHot Module Replacement\n via webpack\n\n\nIntroducing Hot Reloading\n in React Native",
             "title": "Hot Module Replacement"
         },
         {
-            "location": "/hot-module-replacement/#how-does-it-work",
+            "location": "/feature-hmr/#how-does-it-work",
             "text": "In case of web development, the  webpack  development server will automatically refresh the changed parts of your  elmish  views whenever you save a file. Alternatively, in the case of mobile app development, this is achieved through  React Native 's own bundler.",
             "title": "How does it work?"
         },
         {
-            "location": "/hot-module-replacement/#why-does-it-work-so-well-with-safe",
+            "location": "/feature-hmr/#why-does-it-work-so-well-with-safe",
             "text": "Since SAFE uses the Model-View-Update architecture with immutable models, the application state only changes when a message is processed; this fits the HMR model very nicely.",
             "title": "Why does it work so well with SAFE?"
         },
         {
-            "location": "/hot-module-replacement/#further-reading",
+            "location": "/feature-hmr/#further-reading",
             "text": "Hot Module Replacement  via webpack  Introducing Hot Reloading  in React Native",
             "title": "Further reading"
         },

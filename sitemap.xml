@@ -42,20 +42,14 @@
     </url>
         
     <url>
-     <loc>http://safe-stack.github.io/docs//client-server/</loc>
-     <lastmod>2018-04-16</lastmod>
+     <loc>http://safe-stack.github.io/docs/</loc>
+     <lastmod></lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>http://safe-stack.github.io/docs//server-side-rendering/</loc>
-     <lastmod>2018-04-16</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>http://safe-stack.github.io/docs//hot-module-replacement/</loc>
-     <lastmod>2018-04-16</lastmod>
+     <loc>http://safe-stack.github.io/docs/</loc>
+     <lastmod></lastmod>
      <changefreq>daily</changefreq>
     </url>
         
