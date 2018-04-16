@@ -137,13 +137,33 @@
         },
         {
             "location": "/safe-azure/",
-            "text": "Azure\n in SAFE\n\n\nContent to be added!",
+            "text": "Azure\n in SAFE\n\n\nWhat is Azure?\n\n\nAzure is a comprehensive set of cloud services that developers and IT professionals use to build, deploy and manage applications through a global network of data centres. Integrated tools, DevOps and a marketplace support you in efficiently building anything from simple mobile apps to Internet-scale solutions.\n\n\nHow does Azure integrate with SAFE?\n\n\nAzure provides a number of flexible services for SAFE applications, including (but not only):\n\n\nHosting Services\n\n\nAzure comes with several ready-made hosting services, including App Service, which enables seamless hosting of web applications, including ASP .NET Core applications (which \nSaturn\n is built on top of). In addition, Azure supports a number of managed \nhosting services\n for \nDocker\n and \nKubernetes\n, which work fantastically well with SAFE.\n\n\nPlatform Services\n\n\nAzure comes with a large number of ready-made platform services that can \ndramatically lower the cost\n of developing bespoke systems, including:\n\n\n\n\nCompute\n services such as \nAzure Functions\n, for hosting F# code that can dynamically scale based on load, as well as \nService Fabric\n or \nVirtual Machines\n.\n\n\nStorage\n services such as \nAzure Storage\n and \nData Lake\n, for storing virtually limitless volumes of data in unstructured or structure form.\n\n\nDatabase\n services, including managed \nSQL Server\n, \nMySQL\n and \nPostgres\n, as well as \nCosmosDB\n for document and graph stores, \nRedis\n and more.\n\n\nMessaging\n services including \nQueues\n, \nService Bus\n and \nEvent Hub\n.\n\n\nAnalytical\n services such as \nStream Analytics\n, \nDatabricks\n, \nMachine Learning\n and \nAnalysis Services\n.\n\n\nSecurity\n services such as \nKey Vault\n and \nActive Directory\n.\n\n\n\n\nMany of the above services have ready-made SDKs that can be run on .NET and therefore from F#. In addition, the \nAzure Storage Type Provider\n provides unparallel ease of access to Azure Storage Blobs, Queues and Tables from F# \n(currently not yet supported on .NET Core)\n.",
             "title": "Learn about Azure"
         },
         {
             "location": "/safe-azure/#azure-in-safe",
-            "text": "Content to be added!",
+            "text": "",
             "title": "Azure in SAFE"
+        },
+        {
+            "location": "/safe-azure/#what-is-azure",
+            "text": "Azure is a comprehensive set of cloud services that developers and IT professionals use to build, deploy and manage applications through a global network of data centres. Integrated tools, DevOps and a marketplace support you in efficiently building anything from simple mobile apps to Internet-scale solutions.",
+            "title": "What is Azure?"
+        },
+        {
+            "location": "/safe-azure/#how-does-azure-integrate-with-safe",
+            "text": "Azure provides a number of flexible services for SAFE applications, including (but not only):",
+            "title": "How does Azure integrate with SAFE?"
+        },
+        {
+            "location": "/safe-azure/#hosting-services",
+            "text": "Azure comes with several ready-made hosting services, including App Service, which enables seamless hosting of web applications, including ASP .NET Core applications (which  Saturn  is built on top of). In addition, Azure supports a number of managed  hosting services  for  Docker  and  Kubernetes , which work fantastically well with SAFE.",
+            "title": "Hosting Services"
+        },
+        {
+            "location": "/safe-azure/#platform-services",
+            "text": "Azure comes with a large number of ready-made platform services that can  dramatically lower the cost  of developing bespoke systems, including:   Compute  services such as  Azure Functions , for hosting F# code that can dynamically scale based on load, as well as  Service Fabric  or  Virtual Machines .  Storage  services such as  Azure Storage  and  Data Lake , for storing virtually limitless volumes of data in unstructured or structure form.  Database  services, including managed  SQL Server ,  MySQL  and  Postgres , as well as  CosmosDB  for document and graph stores,  Redis  and more.  Messaging  services including  Queues ,  Service Bus  and  Event Hub .  Analytical  services such as  Stream Analytics ,  Databricks ,  Machine Learning  and  Analysis Services .  Security  services such as  Key Vault  and  Active Directory .   Many of the above services have ready-made SDKs that can be run on .NET and therefore from F#. In addition, the  Azure Storage Type Provider  provides unparallel ease of access to Azure Storage Blobs, Queues and Tables from F#  (currently not yet supported on .NET Core) .",
+            "title": "Platform Services"
         },
         {
             "location": "/safe-fable/",
