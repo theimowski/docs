@@ -617,7 +617,7 @@
 </ul>
 <p><em>Currently, the template does not include any Azure / other Cloud integration except Docker deployment. Refer to the <a href="https://github.com/SAFE-Stack/SAFE-BookStore">SAFE-Bookstore</a> repository for an example that uses Azure Table Storage. We're working on improving this to include standard Azure dependencies and other deployment mechanisms.</em></p>
 <h2 id="using-the-template">Using the template</h2>
-<p>Refer to the <a href="../quickstart/#create-your-first-safe-app">Quick Start guide</a> to see basic guidance on how to use the template.</p>
+<p>Refer to the <a href="../quickstart/#create-your-first-safe-app">Quick Start guide</a> to see basic guidance on how to install and use the template.</p>
 <h2 id="template-options">Template options</h2>
 <p>The template provides the ability to customise the created application. You can see template version and available options by running  <code>dotnet new SAFE --help</code>.</p>
 <h3 id="server">Server</h3>
@@ -625,7 +625,7 @@
 <p>Usage: <code>dotnet new SAFE --Server &lt;server&gt;</code></p>
 <p>Where <code>&lt;server&gt;</code> is one of:</p>
 <ul>
-<li><code>saturn</code>: Creates a SAFE app running on Saturn on top of Giraffe <strong>(recommended)</strong>.</li>
+<li><code>saturn</code>: Creates a SAFE app running on Saturn on top of Giraffe <strong>(default)</strong>.</li>
 <li><code>giraffe</code>: Creates a SAFE app running on Giraffe only.</li>
 <li><code>suave</code>: Creates a SAFE app running on Suave.</li>
 </ul>
@@ -654,8 +654,8 @@
 <h2 id="examples">Examples</h2>
 <ul>
 <li>Create a SAFE application using all defaults: <code>dotnet new SAFE -lang F#</code></li>
-<li>Create a SAFE application using Saturn with Fable Remoting: <code>dotnet new SAFE -lang F# --Server saturn --Remoting</code></li>
-<li>Create a SAFE application using Giraffe with Fulma: <code>dotnet new SAFE -lang F# --Server giraffe --Fulma landing</code></li>
+<li>Create a SAFE application using giraffe with Fable Remoting: <code>dotnet new SAFE -lang F# --Server giraffe --Remoting</code></li>
+<li>Create a SAFE application using Suave with Fulma: <code>dotnet new SAFE -lang F# --Server suave --Fulma landing</code></li>
 </ul>
                 
                   
