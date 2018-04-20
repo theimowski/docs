@@ -127,18 +127,13 @@
         },
         {
             "location": "/safe-saturn/",
-            "text": "Saturn\n in SAFE\n\n\nSaturn\n\n\nSaturn is a web development framework written in F# which implements the server-side MVC pattern. Many of its components and concepts will seem familiar to those of us with experience of other web frameworks like Ruby on Rails or Python\u2019s Django.\n\n\nIt's heavily inspired by Elixir's \nPhoenix\n\n\nLearn more about Saturn \nhere",
+            "text": "Saturn\n in SAFE\n\n\nSaturn is a web development framework written in F# which implements the server-side MVC pattern. It works on top of Microsoft's \nASP.NET Core\n and provides very good integration with other ASP.NET Core components. \nMany of its components and concepts will seem familiar to those of us with experience of other web frameworks like Ruby on Rails or Python\u2019s Django.\n\n\nIt's heavily inspired by Elixir's \nPhoenix\n.\n\n\nLearn more about Saturn \nhere",
             "title": "Learn about Saturn"
         },
         {
             "location": "/safe-saturn/#saturn-in-safe",
-            "text": "",
+            "text": "Saturn is a web development framework written in F# which implements the server-side MVC pattern. It works on top of Microsoft's  ASP.NET Core  and provides very good integration with other ASP.NET Core components. \nMany of its components and concepts will seem familiar to those of us with experience of other web frameworks like Ruby on Rails or Python\u2019s Django.  It's heavily inspired by Elixir's  Phoenix .  Learn more about Saturn  here",
             "title": "Saturn in SAFE"
-        },
-        {
-            "location": "/safe-saturn/#saturn",
-            "text": "Saturn is a web development framework written in F# which implements the server-side MVC pattern. Many of its components and concepts will seem familiar to those of us with experience of other web frameworks like Ruby on Rails or Python\u2019s Django.  It's heavily inspired by Elixir's  Phoenix  Learn more about Saturn  here",
-            "title": "Saturn"
         },
         {
             "location": "/safe-azure/",
@@ -172,22 +167,17 @@
         },
         {
             "location": "/safe-fable/",
-            "text": "Fable\n in SAFE\n\n\nFable\n\n\nFable is an F# to JavaScript compiler powered by \nBabel\n, designed to produce readable and standard JavaScript code.    \n\n\nFable brings all the power of F# to the JavaScript ecosystem, it supports most of the F# core library and some of the most commonly used .NET APIs\n\n\nLearn more about Fable \nhere",
+            "text": "Fable\n in SAFE\n\n\nFable is an F# to JavaScript compiler powered by \nBabel\n, designed to produce readable and standard JavaScript code.    \n\n\nFable brings all the power of F# to the JavaScript ecosystem, it supports most of the F# core library and some of the most commonly used .NET APIs\n\n\nLearn more about Fable \nhere",
             "title": "Learn about Fable"
         },
         {
             "location": "/safe-fable/#fable-in-safe",
-            "text": "",
+            "text": "Fable is an F# to JavaScript compiler powered by  Babel , designed to produce readable and standard JavaScript code.      Fable brings all the power of F# to the JavaScript ecosystem, it supports most of the F# core library and some of the most commonly used .NET APIs  Learn more about Fable  here",
             "title": "Fable in SAFE"
         },
         {
-            "location": "/safe-fable/#fable",
-            "text": "Fable is an F# to JavaScript compiler powered by  Babel , designed to produce readable and standard JavaScript code.      Fable brings all the power of F# to the JavaScript ecosystem, it supports most of the F# core library and some of the most commonly used .NET APIs  Learn more about Fable  here",
-            "title": "Fable"
-        },
-        {
             "location": "/safe-elmish/",
-            "text": "Elmish\n in SAFE\n\n\nElmish\n\n\nElm-like abstractions for F# applications targeting Fable.  \n\n\nElmish implements core abstractions that can be used to build applications following the \nmodel-view-update\n Architecture made famous by Elm. \n\n\nThe Elmish library however does not model any \"view\" and is intended for use in conjuction with a DOM/renderer, like React/ReactNative or VirtualDOM.  \n\n\nLearn about Elmish \nhere",
+            "text": "Elmish\n in SAFE\n\n\nWhat is Elmish?\n\n\nElmish is a set of simple abstractions for writing user interfaces in F# applications in a functional style following the \nmodel-view-update\n architecture made famous by \nElm\n. The Elmish library is not coupled to any specific view engine, but is intended for use in conjuction with a DOM/renderer such as React/ReactNative or VirtualDOM.\n\n\nHow does Elmish integrate with SAFE?\n\n\nElmish provides the ability to more easily create user interfaces in the browser on top of \nFable\n so that you don't have to write applications that are tightly coupled to HTML using e.g. JQuery or similar. The \nSAFE Stack templates\n comes pre-bundled with the \nElmish React\n module, which (as the name suggests) uses the \nReact\n library to handle the heavy lifting of modifyng the DOM in an efficient way. This allow us to use the pure functional style of the MVU pattern whilst still retaining the ability to have a highly performant user interface.\n\n\nThis conceptual diagram illustrates how your F# is run in the browser in a SAFE app.\n\n\n\n\nLearn more about Elmish \nhere\n.",
             "title": "Learn about Elmish"
         },
         {
@@ -196,9 +186,14 @@
             "title": "Elmish in SAFE"
         },
         {
-            "location": "/safe-elmish/#elmish",
-            "text": "Elm-like abstractions for F# applications targeting Fable.    Elmish implements core abstractions that can be used to build applications following the  model-view-update  Architecture made famous by Elm.   The Elmish library however does not model any \"view\" and is intended for use in conjuction with a DOM/renderer, like React/ReactNative or VirtualDOM.    Learn about Elmish  here",
-            "title": "Elmish"
+            "location": "/safe-elmish/#what-is-elmish",
+            "text": "Elmish is a set of simple abstractions for writing user interfaces in F# applications in a functional style following the  model-view-update  architecture made famous by  Elm . The Elmish library is not coupled to any specific view engine, but is intended for use in conjuction with a DOM/renderer such as React/ReactNative or VirtualDOM.",
+            "title": "What is Elmish?"
+        },
+        {
+            "location": "/safe-elmish/#how-does-elmish-integrate-with-safe",
+            "text": "Elmish provides the ability to more easily create user interfaces in the browser on top of  Fable  so that you don't have to write applications that are tightly coupled to HTML using e.g. JQuery or similar. The  SAFE Stack templates  comes pre-bundled with the  Elmish React  module, which (as the name suggests) uses the  React  library to handle the heavy lifting of modifyng the DOM in an efficient way. This allow us to use the pure functional style of the MVU pattern whilst still retaining the ability to have a highly performant user interface.  This conceptual diagram illustrates how your F# is run in the browser in a SAFE app.   Learn more about Elmish  here .",
+            "title": "How does Elmish integrate with SAFE?"
         },
         {
             "location": "/feature-client-server/",
