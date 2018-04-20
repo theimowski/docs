@@ -272,7 +272,7 @@
         },
         {
             "location": "/feature-hmr/",
-            "text": "Hot Module Replacement (HMR) allows to update the UI of an application while it is running, without a full reload. In SAFE stack apps, this can dramatically speed up the development for web and mobile GUIs, since there is no need to \"stop\" and \"reload\" and application. Instead, you can make changes to your views and have them immediately update in the browser, without the need to restart the application.\n\n\nHow does it work?\n\n\nIn case of web development, the \nwebpack\n development server will automatically refresh the changed parts of your \nelmish\n views whenever you save a file. Alternatively, in the case of mobile app development, this is achieved through \nReact Native\n's own bundler.\n\n\nWhy does it work so well with SAFE?\n\n\nSince SAFE uses the Model-View-Update architecture with immutable models, the application state only changes when a message is processed; this fits the HMR model very nicely.\n\n\nFurther reading\n\n\n\n\nHot Module Replacement\n via webpack\n\n\nIntroducing Hot Reloading\n in React Native",
+            "text": "Hot Module Replacement (HMR) allows to update the UI of an application while it is running, without a full reload. In SAFE stack apps, this can dramatically speed up the development for web and mobile GUIs, since there is no need to \"stop\" and \"reload\" and application. Instead, you can make changes to your views and have them immediately update in the browser, without the need to restart the application.\n\n\nHow does it work?\n\n\nIn case of web development, the \nwebpack\n development server will automatically refresh the changed parts of your \nelmish\n views whenever you save a file. Alternatively, in the case of mobile app development, this is achieved through \nReact Native\n's own bundler.\n\n\nWhy does it work so well with SAFE?\n\n\nSince SAFE uses the Model-View-Update architecture with immutable models, the application state only changes when a message is processed; this fits the HMR model very nicely. Here's an example of HMR in action to change the input of a textbox to automatically convert the input to upper case.\n\n\n\n\nFurther reading\n\n\n\n\nHot Module Replacement\n via webpack\n\n\nIntroducing Hot Reloading\n in React Native",
             "title": "Hot Module Replacement"
         },
         {
@@ -282,7 +282,7 @@
         },
         {
             "location": "/feature-hmr/#why-does-it-work-so-well-with-safe",
-            "text": "Since SAFE uses the Model-View-Update architecture with immutable models, the application state only changes when a message is processed; this fits the HMR model very nicely.",
+            "text": "Since SAFE uses the Model-View-Update architecture with immutable models, the application state only changes when a message is processed; this fits the HMR model very nicely. Here's an example of HMR in action to change the input of a textbox to automatically convert the input to upper case.",
             "title": "Why does it work so well with SAFE?"
         },
         {
