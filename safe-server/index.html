@@ -446,6 +446,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#comparing-servers" title="Comparing servers" class="md-nav__link">
+    Comparing servers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#why-saturn" title="Why Saturn?" class="md-nav__link">
     Why Saturn?
   </a>
@@ -595,6 +602,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#comparing-servers" title="Comparing servers" class="md-nav__link">
+    Comparing servers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#why-saturn" title="Why Saturn?" class="md-nav__link">
     Why Saturn?
   </a>
@@ -629,9 +643,42 @@
 <li><strong>Giraffe</strong> - A flexible F# framework for creating web-enabled applications. Giraffe runs on top of ASP .NET Core and the Kestrel server. Giraffe's programming model is itself based on Suave's programming model, but has some differences.</li>
 <li><strong>Suave</strong> - A flexible F# framework for creating web-enabled applications. Suave comes with its own built-in web server.</li>
 </ul>
+<h2 id="comparing-servers">Comparing servers</h2>
+<p>The diagram below illustrates some of the differences and similarities of the three stacks.</p>
 <p><img alt="" src="../img/safe-server-1.png" /></p>
+<p>This is also shown in the table below. The core abstractions of Giraffe and Suave - the HTTP Handler and WebPart - are effectively the same thing. Saturn, which lives "on top" of Giraffe, provides a set of new, higher-level abstractions which delegate down to Giraffe's HTTP Handler.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center">Saturn</th>
+<th align="center">Giraffe</th>
+<th align="center">Suave</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ASP .NET compatible?</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td>F#-first</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+<tr>
+<td>Core Abstractions</td>
+<td align="center">scope { } and controller { }</td>
+<td align="center">HttpHandler</td>
+<td align="center">WebPart</td>
+</tr>
+</tbody>
+</table>
 <h2 id="why-saturn">Why Saturn?</h2>
-<p><strong> Saturn is the default, and recommended, web server in SAFE</strong>.</p>
+<p><strong> Saturn is the default and recommended web server in SAFE</strong>.</p>
 <p>Saturn (and Giraffe) runs on top of ASP .NET Core, which comes with an extremely high-performance server that is fully supported by Microsoft, has a huge community of developers and has excellent integration into cloud services such as Microsoft Azure and Amazon Web Services.</p>
 <p>In addition, whilst the Giraffe and the Suave programming are extremely composable and fully functional-first, Saturn allows you to take advantage of abstractions such as <code>application { }</code>, <code>scope { }</code> and <code>controller { }</code> which are not only extremely simple to use but will also be familiar to developers from other (non-.NET) web programming models. And since Saturn's abstractions are all <em>optional</em>, you can always fall back directly to the lower-level Giraffe model if required.</p>
 <p>You'll probably find more samples online that use Suave at the time of writing. However, since Giraffe's programming model is similar to that of Suave, porting them across to Saturn / Giraffe is relatively easy to do.</p>
