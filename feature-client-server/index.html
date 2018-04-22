@@ -774,10 +774,10 @@ let getCustomers next ctx =
 }
 </code></pre>
 
-<p>Note the use of the <code>promise { }</code> computation expression. This functions like <code>async { }</code> blocks that you already know, whilst the <code>fetchAs</code> function automatically deserializes the JSON back into a <code>Customer</code> array.</p>
+<p>Note the use of the <code>promise { }</code> computation expression. This behaves similarly to <code>async { }</code> blocks that you might already know, whilst the <code>fetchAs</code> function automatically deserializes the JSON back into a <code>Customer</code> array.</p>
 <h4 id="turning-on-fables-json-converter">Turning on Fable's JSON Converter</h4>
 <p>By default, serialization between Fable and Giraffe <strong>is not compatible</strong>. In order to fix this, you must replace the JSON converter in Giraffe with Fable's own <code>IJsonSerializer</code>.</p>
-<p>If you are using the dotnet SAFE Template, this will automatically be done for you - see the <a href="https://github.com/SAFE-Stack/SAFE-template/blob/master/Content/src/Server/ServerSaturn.fs#L40L44"><code>config</code></a> function in <code>Server.fs</code>.</p>
+<p>If you are using the <a href="../safe-template">SAFE Template</a>, this will automatically be done for you - see the <a href="https://github.com/SAFE-Stack/SAFE-template/blob/master/Content/src/Server/ServerSaturn.fs#L40L44"><code>config</code></a> function in <code>Server.fs</code>.</p>
 <h3 id="sharing-data-using-fableremoting">Sharing data using Fable.Remoting</h3>
 <p>As an alternative to raw HTTP, you can also use the <a href="https://github.com/Zaid-Ajaj/Fable.Remoting">Fable.Remoting</a> library, which provides an RPC-style mechanism for calling server endpoints.</p>
 <p>In our case, instead of creating a <code>scope { }</code> on the server and using <code>fetch</code> on the client, you create a simple <em>protocol</em> which contains methods exposed by the server:</p>
