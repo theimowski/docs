@@ -127,13 +127,28 @@
         },
         {
             "location": "/component-fable/",
-            "text": "Fable\n in SAFE\n\n\nFable is an F# to JavaScript compiler powered by \nBabel\n, designed to produce readable and standard JavaScript code.    \n\n\nFable brings all the power of F# to the JavaScript ecosystem, it supports most of the F# core library and some of the most commonly used .NET APIs\n\n\nLearn more about Fable \nhere",
+            "text": "Fable\n in SAFE\n\n\nWhat is Fable?\n\n\nFable is an F#-to-JavaScript (JS) compiler powered by \nBabel\n, designed to produce readable and standard JS code. Fable brings all the power of F# to the JS ecosystem, with support for most of the F# core library as well the most commonly used .NET APIs.\n\n\nHow does Fable integrate with SAFE?\n\n\nFable is much more than an F#-to-JS compiler - it also provides \nrich\n integration with the JS ecosystem which means that you can use JS libraries from F# (and vice versa) as well as make use of standard JS tools. There are two \"sides\" to Fable that work together to allow F# to run within the JS world - a .NET tooling component and a JS tooling component:\n\n\n\n\nIt's important to understand the Fable is not simply an application that takes in F# and emits JS - instead, the dotnet fable application emits an intermediary file (a Babel Abstract Syntax Tree), which in turn is converted by webpack into well-written JS.\n\n\nFable and webpack\n\n\nFable's \"JavaScript\" side is normally hosted within the context of \nwebpack\n, a powerful bundling tool. You'll normally see a \nwebpack.config.js\n file in the client folder of your SAFE applications. This file tells webpack how to emit JS from F# files and hosts the Fable webpack plugin, \nfable-loader\n.\n\n\nUsing webpack also provides many advantages - for example, we as developers can control how JS is rendered through standard tools that exist in the JS ecosystem, whilst also using features such as \nHot Module replacement\n and Source Maps.\n\n\nCreating a webpack config file isn't the easiest thing in the world, so the \nSAFE Template\n already has one pre-built that contains the most standard features to get you up and running immediately.\n\n\nLearn more about Fable \nhere\n.",
             "title": "Learn about Fable"
         },
         {
             "location": "/component-fable/#fable-in-safe",
-            "text": "Fable is an F# to JavaScript compiler powered by  Babel , designed to produce readable and standard JavaScript code.      Fable brings all the power of F# to the JavaScript ecosystem, it supports most of the F# core library and some of the most commonly used .NET APIs  Learn more about Fable  here",
+            "text": "",
             "title": "Fable in SAFE"
+        },
+        {
+            "location": "/component-fable/#what-is-fable",
+            "text": "Fable is an F#-to-JavaScript (JS) compiler powered by  Babel , designed to produce readable and standard JS code. Fable brings all the power of F# to the JS ecosystem, with support for most of the F# core library as well the most commonly used .NET APIs.",
+            "title": "What is Fable?"
+        },
+        {
+            "location": "/component-fable/#how-does-fable-integrate-with-safe",
+            "text": "Fable is much more than an F#-to-JS compiler - it also provides  rich  integration with the JS ecosystem which means that you can use JS libraries from F# (and vice versa) as well as make use of standard JS tools. There are two \"sides\" to Fable that work together to allow F# to run within the JS world - a .NET tooling component and a JS tooling component:   It's important to understand the Fable is not simply an application that takes in F# and emits JS - instead, the dotnet fable application emits an intermediary file (a Babel Abstract Syntax Tree), which in turn is converted by webpack into well-written JS.",
+            "title": "How does Fable integrate with SAFE?"
+        },
+        {
+            "location": "/component-fable/#fable-and-webpack",
+            "text": "Fable's \"JavaScript\" side is normally hosted within the context of  webpack , a powerful bundling tool. You'll normally see a  webpack.config.js  file in the client folder of your SAFE applications. This file tells webpack how to emit JS from F# files and hosts the Fable webpack plugin,  fable-loader .  Using webpack also provides many advantages - for example, we as developers can control how JS is rendered through standard tools that exist in the JS ecosystem, whilst also using features such as  Hot Module replacement  and Source Maps.  Creating a webpack config file isn't the easiest thing in the world, so the  SAFE Template  already has one pre-built that contains the most standard features to get you up and running immediately.  Learn more about Fable  here .",
+            "title": "Fable and webpack"
         },
         {
             "location": "/component-elmish/",
