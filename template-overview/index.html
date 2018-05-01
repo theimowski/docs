@@ -381,54 +381,18 @@
           
           
 
-
-  <li class="md-nav__item">
-    <a href="../feature-clientserver/" title="Client/Server communication" class="md-nav__link">
-      Client/Server communication
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../feature-ssr/" title="Server Side Rendering" class="md-nav__link">
-      Server Side Rendering
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../feature-hmr/" title="Hot Module Replacement" class="md-nav__link">
-      Hot Module Replacement
-    </a>
-  </li>
-
-        
-          
-          
-          
-
   
 
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-4" type="checkbox" id="nav-6-4" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-1" type="checkbox" id="nav-6-1" checked>
     
-    <label class="md-nav__link" for="nav-6-4">
+    <label class="md-nav__link" for="nav-6-1">
       The SAFE Template
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-6-4">
+      <label class="md-nav__title" for="nav-6-1">
         The SAFE Template
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -499,8 +463,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#docker" title="Docker" class="md-nav__link">
-    Docker
+  <a href="#deployment" title="Deployment" class="md-nav__link">
+    Deployment
   </a>
   
 </li>
@@ -547,8 +511,104 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-1-3" type="checkbox" id="nav-6-1-3">
+    
+    <label class="md-nav__link" for="nav-6-1-3">
+      Deployment Options
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-6-1-3">
+        Deployment Options
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../template-docker/" title="Deploy to Docker" class="md-nav__link">
+      Deploy to Docker
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../template-appservice/" title="Deploy to App Service" class="md-nav__link">
+      Deploy to App Service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../template-azure-registration/" title="Registering with Azure" class="md-nav__link">
+      Registering with Azure
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../feature-clientserver/" title="Client/Server communication" class="md-nav__link">
+      Client/Server communication
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../feature-ssr/" title="Server Side Rendering" class="md-nav__link">
+      Server Side Rendering
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../feature-hmr/" title="Hot Module Replacement" class="md-nav__link">
+      Hot Module Replacement
+    </a>
   </li>
 
         
@@ -696,8 +756,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#docker" title="Docker" class="md-nav__link">
-    Docker
+  <a href="#deployment" title="Deployment" class="md-nav__link">
+    Deployment
   </a>
   
 </li>
@@ -743,13 +803,14 @@
                   <h1>SAFE Template overview</h1>
                 
                 <p>The <a href="https://github.com/SAFE-Stack/SAFE-template">SAFE Template</a> is a <a href="https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-new?tabs=netcore2x">dotnet CLI template</a> for SAFE Stack projects, designed to get you up and running as quickly as possible, with flexible options to suit your application.</p>
-<p>The template gets you up and running with 3 core components of the stack:</p>
+<p>The template gets you up and running with the most common elements of the stack:</p>
 <ul>
-<li><a href="https://saturnframework.github.io/docs/">Saturn</a>, <a href="https://github.com/giraffe-fsharp/Giraffe">Giraffe</a> or <a href="https://suave.io/">Suave</a></li>
-<li><a href="http://fable.io/">Fable</a></li>
-<li><a href="https://fable-elmish.github.io/elmish/">Elmish</a></li>
+<li><a href="https://saturnframework.github.io/docs/">Saturn</a>, <a href="https://github.com/giraffe-fsharp/Giraffe">Giraffe</a> or <a href="https://suave.io/">Suave</a> for your web server</li>
+<li><a href="http://fable.io/">Fable</a> for client-side F#</li>
+<li><a href="https://fable-elmish.github.io/elmish/">Elmish</a> for web UI</li>
+<li><a href="https://mangelmaxime.github.io/Fulma/">Fulma</a> for consistent web styling</li>
+<li><a href="https://www.docker.com/">Docker</a> or <a href="https://azure.microsoft.com/en-us/services/app-service/">Azure App Service</a> deployment models for hosting.</li>
 </ul>
-<p><em>Currently, the template does not include any Azure / other Cloud integration except Docker deployment. Refer to the <a href="https://github.com/SAFE-Stack/SAFE-BookStore">SAFE-Bookstore</a> repository for an example that uses Azure Table Storage. We're working on improving this to include standard Azure dependencies and other deployment mechanisms.</em></p>
 <h2 id="using-the-template">Using the template</h2>
 <p>Refer to the <a href="../quickstart/#create-your-first-safe-app">Quick Start guide</a> to see basic guidance on how to install and use the template.</p>
 <h2 id="template-options">Template options</h2>
@@ -779,9 +840,14 @@
 <h3 id="fableremoting">Fable.Remoting</h3>
 <p><em>Configures the SAFE app to use <a href="https://github.com/Zaid-Ajaj/Fable.Remoting">Fable.Remoting</a> to the template. See <a href="../feature-clientserver/#sharing-data">here</a> for an overview of Fable Remoting and the alternatives for sharing data between client and server.</em></p>
 <p>Usage: <code>dotnet new SAFE --Remoting</code></p>
-<h3 id="docker">Docker</h3>
-<p><em>Configures the SAFE app to use a <a href="https://fake.build/">FAKE</a> target that bundles and build a Docker image.</em></p>
-<p>Usage: <code>dotnet new SAFE --Docker</code></p>
+<h3 id="deployment">Deployment</h3>
+<p><em>Configures the SAFE app to elements needed for deploying to one of two different hosting models.</em></p>
+<p>Usage: <code>dotnet new SAFE --Deploy &lt;hosting model&gt;</code></p>
+<p>Where <code>&lt;hosting model&gt;</code> is one of:</p>
+<ul>
+<li><code>docker</code>: Adds <a href="https://fake.build/">FAKE</a> targets that bundles and build a Docker image.</li>
+<li><code>azure</code>: Adds <a href="https://fake.build/">FAKE</a> targets and an <a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview">Azure Resource Manager</a> (ARM) template that allows deployment to the <a href="https://azure.microsoft.com/en-us/services/app-service/">Azure App Service</a> plus an <a href="https://azure.microsoft.com/en-us/services/application-insights/">Azure Application Insights</a> instance.</li>
+</ul>
 <h3 id="npm">NPM</h3>
 <p><em>Configures the SAFE app to use NPM instead of default Yarn for JS package management.</em></p>
 <p>Usage: <code>dotnet new SAFE --NPM</code></p>
@@ -817,8 +883,8 @@
 
         <!-- Link to previous page -->
         
-          <a href="../feature-hmr/"
-              title="Hot Module Replacement"
+          <a href="../component-elmish/"
+              title="Learn about Elmish"
               class="md-flex md-footer-nav__link md-footer-nav__link--prev"
               rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -831,7 +897,7 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Hot Module Replacement
+                Learn about Elmish
               </span>
             </div>
           </a>

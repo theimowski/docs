@@ -381,54 +381,18 @@
           
           
 
-
-  <li class="md-nav__item">
-    <a href="../feature-clientserver/" title="Client/Server communication" class="md-nav__link">
-      Client/Server communication
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../feature-ssr/" title="Server Side Rendering" class="md-nav__link">
-      Server Side Rendering
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../feature-hmr/" title="Hot Module Replacement" class="md-nav__link">
-      Hot Module Replacement
-    </a>
-  </li>
-
-        
-          
-          
-          
-
   
 
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-4" type="checkbox" id="nav-6-4" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-1" type="checkbox" id="nav-6-1" checked>
     
-    <label class="md-nav__link" for="nav-6-4">
+    <label class="md-nav__link" for="nav-6-1">
       The SAFE Template
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-6-4">
+      <label class="md-nav__title" for="nav-6-1">
         The SAFE Template
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -475,15 +439,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#build-target" title="Build target" class="md-nav__link">
-    Build target
+  <a href="#build-target" title=""Build" target" class="md-nav__link">
+    "Build" target
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#run-target" title="Run target" class="md-nav__link">
-    Run target
+  <a href="#run-target" title=""Run" target" class="md-nav__link">
+    "Run" target
   </a>
   
 </li>
@@ -499,8 +463,104 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-1-3" type="checkbox" id="nav-6-1-3">
+    
+    <label class="md-nav__link" for="nav-6-1-3">
+      Deployment Options
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-6-1-3">
+        Deployment Options
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../template-docker/" title="Deploy to Docker" class="md-nav__link">
+      Deploy to Docker
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../template-appservice/" title="Deploy to App Service" class="md-nav__link">
+      Deploy to App Service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../template-azure-registration/" title="Registering with Azure" class="md-nav__link">
+      Registering with Azure
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../feature-clientserver/" title="Client/Server communication" class="md-nav__link">
+      Client/Server communication
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../feature-ssr/" title="Server Side Rendering" class="md-nav__link">
+      Server Side Rendering
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../feature-hmr/" title="Hot Module Replacement" class="md-nav__link">
+      Hot Module Replacement
+    </a>
   </li>
 
         
@@ -612,15 +672,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#build-target" title="Build target" class="md-nav__link">
-    Build target
+  <a href="#build-target" title=""Build" target" class="md-nav__link">
+    "Build" target
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#run-target" title="Run target" class="md-nav__link">
-    Run target
+  <a href="#run-target" title=""Run" target" class="md-nav__link">
+    "Run" target
   </a>
   
 </li>
@@ -647,29 +707,26 @@
                   <h1>FAKE script</h1>
                 
                 <p>The template uses <a href="https://fake.build/">FAKE</a> to build the application.</p>
-<p>Generated FAKE script consist of two primary build chains:</p>
-<ol>
-<li><strong>Build</strong></li>
-<li><strong>Run</strong></li>
-</ol>
-<h2 id="build-target">Build target</h2>
+<p>Generated FAKE script consist of two primary build targets, used for different purposes:</p>
+<h2 id="build-target"><strong>"Build"</strong> target</h2>
 <p>This target is a standard build procedure, consisting of following steps:</p>
 <ol>
-<li><strong>InstallDotNetCore</strong> - here, a required version of dotnet core is read from <code>global.json</code> file and if not yet installed, the script downloads and performs the installation of desired dotnet core SDK,</li>
-<li><strong>InstallClient</strong> - in this step, either NPM or Yarn is invoked (based on which option was chosen when generating project) and it installs all Client dependencies defined in <code>package.json</code>. The step also performs <code>dotnet restore</code> to fetch NuGet-based packages used by front-end,</li>
-<li><strong>Build</strong> - for server side <code>dotnet build</code> command is invoked, and for client side a special <code>dotnet-fable</code> CLI tool using <code>dotnet fable webpack</code> command with <code>-p</code> flag to compile Client project to a single JavaScript bundle file,</li>
-<li><strong>Bundle</strong> (only if <code>--Docker</code> flag specified) - all necessary artifacts for both Server and Client are collected for following <code>Docker</code> target,</li>
-<li><strong>Docker</strong> (only if <code>--Docker</code> flag specified) - based on present <code>Dockerfile</code>, docker image is built and tagged using <code>dockerUser</code> and <code>dockerImageName</code> values from the script.</li>
+<li><strong>InstallDotNetCore</strong> - here, a required version of dotnet core is read from <code>global.json</code> file and if not yet installed, the script downloads and performs the installation of desired dotnet core SDK.</li>
+<li><strong>InstallClient</strong> - in this step, either NPM or Yarn is invoked (based on which option was chosen when generating project) and it installs all Client dependencies defined in <code>package.json</code>. The step also performs <code>dotnet restore</code> to fetch NuGet-based packages used by front-end.</li>
+<li><strong>Build</strong> - for server side <code>dotnet build</code> command is invoked, and for client side a special <code>dotnet-fable</code> CLI tool using <code>dotnet fable webpack</code> command with <code>-p</code> flag to compile Client project to a single JavaScript bundle file.</li>
 </ol>
-<h2 id="run-target">Run target</h2>
+<p><em>Note: Extra build steps will be included if you specified the <a href="../template-docker"><code>--Deploy docker</code></a> or <a href="../template-appservice"><code>--Deploy azure</code></a> flag when creating your project.</em></p>
+<h2 id="run-target"><strong>"Run"</strong> target</h2>
 <p>This target is used for development purposes, and provides a great live-reload experience. It consists of following steps:</p>
 <ol>
 <li><strong>InstallClient</strong> - same as above in <code>Build</code> chain,</li>
 <li><strong>RestoreServer</strong> - <code>dotnet restore</code> is invoked for Server to fetch all necessary packages (note <code>dotnet build</code> is skipped here),</li>
-<li><strong>Run</strong> - most interesting part; in this step 3 separate actions are performed in parallel:</li>
+<li><strong>Run</strong> - most interesting part; in this step 3 separate actions are performed in parallel:<ol>
 <li><code>dotnet watch run</code> for Server side - compiles, runs Server and watches for changes in Server source files. Whenever a change in any source file is detected, Server is automatically stopped, recompiled and rerun in the background,</li>
 <li><code>dotnet fable webpack-dev-server</code> for Client side - compiles Client to JavaScript and runs <a href="https://github.com/webpack/webpack-dev-server">Webpack dev-server</a> - this in turn recompiles and reloads the client application upon any source file change in Client project,</li>
 <li>New process is started for <code>http://localhost:8080</code> to open the URL in default browser</li>
+</ol>
+</li>
 </ol>
                 
                   
@@ -719,7 +776,7 @@
 
         <!-- Link to next page -->
         
-          <a href="../faq-server/" title="Choosing your web server"
+          <a href="../template-docker/" title="Deploy to Docker"
               class="md-flex md-footer-nav__link md-footer-nav__link--next"
               rel="next">
             <div class="md-flex__cell md-flex__cell--stretch
@@ -728,7 +785,7 @@
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Choosing your web server
+                Deploy to Docker
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
