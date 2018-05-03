@@ -368,31 +368,10 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
     
     <label class="md-nav__link" for="nav-6">
-      Features of SAFE
+      The SAFE Template
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-6">
-        Features of SAFE
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-1" type="checkbox" id="nav-6-1" checked>
-    
-    <label class="md-nav__link" for="nav-6-1">
-      The SAFE Template
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-6-1">
         The SAFE Template
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -431,13 +410,13 @@
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-1-3" type="checkbox" id="nav-6-1-3" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3" type="checkbox" id="nav-6-3" checked>
     
-    <label class="md-nav__link" for="nav-6-1-3">
+    <label class="md-nav__link" for="nav-6-3">
       Deployment Options
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-      <label class="md-nav__title" for="nav-6-1-3">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-3">
         Deployment Options
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -506,6 +485,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#what-is-an-arm-template" title="What is an ARM template?" class="md-nav__link">
+    What is an ARM template?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#build-arguments" title="Build arguments" class="md-nav__link">
     Build arguments
   </a>
@@ -555,6 +541,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../template-azure-ai/" title="Application Insights Integration" class="md-nav__link">
+      Application Insights Integration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../template-azure-registration/" title="Registering with Azure" class="md-nav__link">
       Registering with Azure
     </a>
@@ -570,6 +568,25 @@
     </nav>
   </li>
 
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Features of SAFE
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        Features of SAFE
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
         
           
           
@@ -619,13 +636,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
     
-    <label class="md-nav__link" for="nav-7">
+    <label class="md-nav__link" for="nav-8">
       FAQs
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-7">
+      <label class="md-nav__title" for="nav-8">
         FAQs
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -737,6 +754,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#what-is-an-arm-template" title="What is an ARM template?" class="md-nav__link">
+    What is an ARM template?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#build-arguments" title="Build arguments" class="md-nav__link">
     Build arguments
   </a>
@@ -790,7 +814,7 @@
                 
                   <h1>Deploy to App Service</h1>
                 
-                <p>The SAFE template has the ability to deploy to Azure's <a href="https://azure.microsoft.com/en-us/services/app-service/">App Service</a> with minimum effort.</p>
+                <p>The SAFE template has the ability to deploy to Azure's <a href="https://azure.microsoft.com/en-us/services/app-service/">App Service</a> with minimum effort. This template mode will also create you an <a href="https://azure.microsoft.com/en-us/services/application-insights/">Application Insights</a> account, linked to your web application.</p>
 <h2 id="what-is-azure-app-service">What is Azure App Service?</h2>
 <p>The Azure App Service allows you to quickly build, deploy, and scale enterprise-grade web, mobile, and API apps running on any platform whilst meeting rigorous performance, scalability, security and compliance requirements using a fully-managed platform to perform infrastructure maintenance.</p>
 <p>It comes in a number of pricing plans, including a free option and has options for scale-up, scale-out, turn-key authentication as well as powerful monitoring capabilities. It is compatible with many runtimes and includes excellent support for both .NET Framework and .NET Core.</p>
@@ -800,10 +824,14 @@
 <p>The Azure variant of the SAFE template adds the following extra build stages:</p>
 <ol>
 <li><strong>Bundle</strong> - Runs after the standard Build step. It combines the outputs of the Client and Server application into a single folder.</li>
-<li><strong>ArmTemplate</strong> - Deploys an Azure Resource Manager template containing an entire environment as required by the SAFE application.</li>
+<li><strong>ArmTemplate</strong> - Deploys an Azure Resource Manager (ARM) template containing an entire environment as required by the SAFE application.</li>
 <li><strong>AppService</strong> - Zips up the bundled folder and deploys it into the created environment.</li>
 </ol>
-<p><em>Note: There is a known issue that currently the FAKE script may sometimes fail the first time you run it with <a href="https://github.com/SAFE-Stack/SAFE-template/pull/65#issuecomment-385619990">this error</a>. If this occurs, simply open the FAKE script in your favourite editor, add a new line anywhere in the script, save and re-run. We're looking to fix this as soon as possible!</em></p>
+<blockquote>
+<p>There is a known issue that currently the FAKE script may sometimes fail the first time you run it with <a href="https://github.com/SAFE-Stack/SAFE-template/pull/65#issuecomment-385619990">this error</a>. If this occurs, simply open the FAKE script in your favourite editor, add a new line anywhere in the script, save and re-run. We're looking to fix this as soon as possible!</p>
+</blockquote>
+<h3 id="what-is-an-arm-template">What is an ARM template?</h3>
+<p>An ARM template is a declarative JSON file which contains the details of the Azure resources you require in your environment. This might include a web application, database, VM and messaging service - essentially any service supported by Azure. ARM templates are smart, in that you can repeatedly deploy them over an existing environment and only the newly added elements in the template will be applied onto the environment - perfect for a CI / CD approach. This also allows you to create entire dev / test environments from scratch within just a few minutes. The ARM template that comes with the SAFE template includes everything you need for a complete deployment to Azure from a clean state.</p>
 <h3 id="build-arguments">Build arguments</h3>
 <p>Deploying your application through FAKE is relatively simple. Use the following command:</p>
 <pre><code>build appservice
@@ -830,6 +858,9 @@
 <p><img alt="" src="../img/deploy-appservice-6.png" /></p>
 <p>Finally, you will be prompted sign into Azure using your normal user account. After a short delay, the FAKE script will continue.</p>
 <p><img alt="" src="../img/deploy-appservice-7.png" /></p>
+<blockquote>
+<p>Note: If you're getting <code>FileNotFoundException</code> for <code>Microsoft.Rest.ClientRuntime.Azure</code>, try editing and rerunning FAKE script (<a href="https://github.com/SAFE-Stack/SAFE-template/pull/65#issuecomment-385621229">see details</a>).</p>
+</blockquote>
 <h3 id="creating-a-fully-automated-deployment">Creating a fully automated deployment</h3>
 <p>You can also elect to implement a fully-automated (non-interactive) deployment model, ideal for Continuous Deployment (CD) scenarios through tools such as AppVeyor and Visual Studio Team Services, using an <a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal#create-an-azure-active-directory-application">Azure Active Directory Application</a>. In this model, in addition to a SubscriptionID and Client ID, you also supply a Tenant ID and an Application Secret into the FAKE script to deploy your ARM resources; these identities should normally be secured and supplied into your FAKE script as arguments rather than committed into source control.</p>
 <h2 id="viewing-the-deployed-safe-application">Viewing the deployed SAFE application</h2>
@@ -891,7 +922,7 @@
 
         <!-- Link to next page -->
         
-          <a href="../template-azure-registration/" title="Registering with Azure"
+          <a href="../template-azure-ai/" title="Application Insights Integration"
               class="md-flex md-footer-nav__link md-footer-nav__link--next"
               rel="next">
             <div class="md-flex__cell md-flex__cell--stretch
@@ -900,7 +931,7 @@
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Registering with Azure
+                Application Insights Integration
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

@@ -368,31 +368,10 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
     
     <label class="md-nav__link" for="nav-6">
-      Features of SAFE
+      The SAFE Template
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-6">
-        Features of SAFE
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-1" type="checkbox" id="nav-6-1" checked>
-    
-    <label class="md-nav__link" for="nav-6-1">
-      The SAFE Template
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-6-1">
         The SAFE Template
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -518,13 +497,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-1-3" type="checkbox" id="nav-6-1-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3" type="checkbox" id="nav-6-3">
     
-    <label class="md-nav__link" for="nav-6-1-3">
+    <label class="md-nav__link" for="nav-6-3">
       Deployment Options
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-      <label class="md-nav__title" for="nav-6-1-3">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-3">
         Deployment Options
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -560,6 +539,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../template-azure-ai/" title="Application Insights Integration" class="md-nav__link">
+      Application Insights Integration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../template-azure-registration/" title="Registering with Azure" class="md-nav__link">
       Registering with Azure
     </a>
@@ -575,6 +566,25 @@
     </nav>
   </li>
 
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Features of SAFE
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        Features of SAFE
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
         
           
           
@@ -624,13 +634,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
     
-    <label class="md-nav__link" for="nav-7">
+    <label class="md-nav__link" for="nav-8">
       FAQs
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-7">
+      <label class="md-nav__title" for="nav-8">
         FAQs
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -845,8 +855,8 @@
 <p>Usage: <code>dotnet new SAFE --Deploy &lt;hosting model&gt;</code></p>
 <p>Where <code>&lt;hosting model&gt;</code> is one of:</p>
 <ul>
-<li><code>docker</code>: Adds <a href="https://fake.build/">FAKE</a> targets that bundles and build a Docker image.</li>
-<li><code>azure</code>: Adds <a href="https://fake.build/">FAKE</a> targets and an <a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview">Azure Resource Manager</a> (ARM) template that allows deployment to the <a href="https://azure.microsoft.com/en-us/services/app-service/">Azure App Service</a> plus an <a href="https://azure.microsoft.com/en-us/services/application-insights/">Azure Application Insights</a> instance.</li>
+<li><code>docker</code>: Adds <a href="https://fake.build/">FAKE</a> targets that bundles and build a Docker image. See <a href="../template-docker/">here</a> for more details about Docker deployment.</li>
+<li><code>azure</code>: Adds <a href="https://fake.build/">FAKE</a> targets and an <a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview">Azure Resource Manager</a> (ARM) template that allows deployment to the <a href="https://azure.microsoft.com/en-us/services/app-service/">Azure App Service</a> plus an <a href="https://azure.microsoft.com/en-us/services/application-insights/">Azure Application Insights</a> instance. See <a href="../template-appservice/">here</a> for more details about ARM deployment.</li>
 </ul>
 <h3 id="npm">NPM</h3>
 <p><em>Configures the SAFE app to use NPM instead of default Yarn for JS package management.</em></p>

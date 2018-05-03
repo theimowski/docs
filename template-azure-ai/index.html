@@ -13,7 +13,7 @@
         <meta name="description" content="Documentation for SAFE">
       
       
-        <link rel="canonical" href="http://safe-stack.github.io/docs/template-azure-registration/">
+        <link rel="canonical" href="http://safe-stack.github.io/docs/template-azure-ai/">
       
       
         <meta name="author" content="SAFE Stack">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Registering with Azure - SAFE Documentation</title>
+        <title>Application Insights Integration - SAFE Documentation</title>
       
     
     
@@ -99,7 +99,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
-      <a href="#creating-an-azure-account" tabindex="1" class="md-skip">
+      <a href="#what-is-application-insights" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -125,7 +125,7 @@
                 SAFE Documentation
               </span>
               <span class="md-header-nav__topic">
-                Registering with Azure
+                Application Insights Integration
               </span>
             
           
@@ -450,18 +450,6 @@
           
           
 
-
-  <li class="md-nav__item">
-    <a href="../template-azure-ai/" title="Application Insights Integration" class="md-nav__link">
-      Application Insights Integration
-    </a>
-  </li>
-
-        
-          
-          
-          
-
   
 
 
@@ -471,11 +459,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        Registering with Azure
+        Application Insights Integration
       </label>
     
-    <a href="./" title="Registering with Azure" class="md-nav__link md-nav__link--active">
-      Registering with Azure
+    <a href="./" title="Application Insights Integration" class="md-nav__link md-nav__link--active">
+      Application Insights Integration
     </a>
     
       
@@ -487,23 +475,37 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#creating-an-azure-account" title="Creating an Azure Account" class="md-nav__link">
-    Creating an Azure Account
+  <a href="#what-is-application-insights" title="What is Application Insights?" class="md-nav__link">
+    What is Application Insights?
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#selecting-a-subscription" title="Selecting a Subscription" class="md-nav__link">
-    Selecting a Subscription
+  <a href="#basics-of-working-with-ai" title="Basics of working with AI" class="md-nav__link">
+    Basics of working with AI
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-safe-apps-integrate-with-ai" title="How do SAFE apps integrate with AI?" class="md-nav__link">
+    How do SAFE apps integrate with AI?
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#creating-an-app-registration" title="Creating an App Registration" class="md-nav__link">
-    Creating an App Registration
+  <a href="#support-on-giraffe-saturn" title="Support on Giraffe / Saturn" class="md-nav__link">
+    Support on Giraffe / Saturn
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#support-on-suave" title="Support on Suave" class="md-nav__link">
+    Support on Suave
   </a>
   
 </li>
@@ -521,6 +523,18 @@
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../template-azure-registration/" title="Registering with Azure" class="md-nav__link">
+      Registering with Azure
+    </a>
   </li>
 
         
@@ -697,23 +711,37 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#creating-an-azure-account" title="Creating an Azure Account" class="md-nav__link">
-    Creating an Azure Account
+  <a href="#what-is-application-insights" title="What is Application Insights?" class="md-nav__link">
+    What is Application Insights?
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#selecting-a-subscription" title="Selecting a Subscription" class="md-nav__link">
-    Selecting a Subscription
+  <a href="#basics-of-working-with-ai" title="Basics of working with AI" class="md-nav__link">
+    Basics of working with AI
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-safe-apps-integrate-with-ai" title="How do SAFE apps integrate with AI?" class="md-nav__link">
+    How do SAFE apps integrate with AI?
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#creating-an-app-registration" title="Creating an App Registration" class="md-nav__link">
-    Creating an App Registration
+  <a href="#support-on-giraffe-saturn" title="Support on Giraffe / Saturn" class="md-nav__link">
+    Support on Giraffe / Saturn
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#support-on-suave" title="Support on Suave" class="md-nav__link">
+    Support on Suave
   </a>
   
 </li>
@@ -739,45 +767,41 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/SAFE-Stack/docs/edit/master/docs/template-azure-registration.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/SAFE-Stack/docs/edit/master/docs/template-azure-ai.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>Registering with Azure</h1>
+                  <h1>Application Insights Integration</h1>
                 
-                <p>In order to deploy applications to Azure from the FAKE script created by the SAFE template, you first need to create an Azure account and create an App Registration which allows remote deployments as a one-off task. This section explains how to do this.</p>
-<h2 id="creating-an-azure-account">Creating an Azure Account</h2>
-<p>You'll need to register for an Azure account. This can be achieved quickly and easily at <a href="https://azure.microsoft.com">https://azure.microsoft.com</a>. New users are afforded a number of services for free for an entire year, including Azure SQL, Storage and VMs etc.</p>
-<h2 id="selecting-a-subscription">Selecting a Subscription</h2>
-<p>Once you have created your account, you'll need to make a note of the Azure Subscription ID that you will deploy your SAFE applications into.</p>
-<ol>
-<li>Log in to your <a href="https://portal.azure.com">Azure Portal</a>.</li>
-<li>Select All Services on the left-menu menu and locate <strong>Subscriptions</strong> in the blade on the right.
-<img alt="" src="../img/deploy-appservice-1.png" /></li>
-<li>Make a note of the <strong>Subscription ID</strong> of the subscription that you wish to deploy your application into. If you just created your Azure account, you'll most likely have a single subscription in the list.
-<img alt="" src="../img/deploy-appservice-2.png" /></li>
-</ol>
-<h3 id="creating-an-app-registration">Creating an App Registration</h3>
-<p>You now need to create an "App Registration" in your Azure Active Directory. This registration allows you to deploy an entire environment directly into Azure, complete with the deployed application, directly from a FAKE script.</p>
-<ol>
-<li>Navigate to the <strong>Azure Active Directory</strong> blade in the Portal.</li>
-<li>Select <strong>App registrations</strong> from the menu in the blade.</li>
-<li>Select <strong>New application registration</strong>.
-<img alt="" src="../img/deploy-appservice-3.png" /></li>
-<li>Enter the <strong>Name</strong> of your application as any name e.g <strong>SAFE Deploy</strong></li>
-<li>Set the <strong>Application type</strong> as <strong>Native</strong>.</li>
-<li>Set the Redirect URI as any URI e.g <code>http://safe-stack.github.io/</code></li>
-<li>Hit Create.</li>
-<li>Make a note of the <strong>Application ID</strong> on the blade.
-<img alt="" src="../img/deploy-appservice-4.png" /></li>
-<li>Choose <strong>Settings</strong> from the top menu.</li>
-<li>Choose <strong>Required Permissions</strong> from the Settings blade.</li>
-<li>Choose <strong>Add</strong> from the top menu of the Required Permissions blade.</li>
-<li>Choose <strong>Select an API</strong> from the Add API Access blade.</li>
-<li>Choose <strong>Windows Azure Service Management API</strong> and hit <strong>Select</strong>.</li>
-<li>Check <strong>Access Azure Service Management as organization users (preview)</strong> and hit <strong>Select</strong>.</li>
-<li>Hit <strong>Done</strong> from the Add API Access blade.</li>
-</ol>
-<p>Congratulations - you're now ready to use the SAFE FAKE template to perform remote deployments.</p>
+                <h2 id="what-is-application-insights">What is Application Insights?</h2>
+<p>Application Insights (AI) is an extensible Application Performance Management (APM) service for web developers on multiple platforms. You can use it to monitor your live web application; it will automatically detect performance anomalies. It includes powerful analytics tools to help you diagnose issues and to understand what users actually do with your app. It's designed to help you continuously improve performance and usability. Features of AI include:</p>
+<ul>
+<li><strong>Request tracking</strong>: monitoring every request, timing and response, with full correlation of operations within a request.</li>
+<li><strong>Dependency tracking</strong>: understand calls to third-party dependencies e.g. databases, web services etc.</li>
+<li><strong>Failures</strong>: Understand which failures are occurring on your site, how often and with full stack traces.</li>
+<li><strong>User behaviours</strong>: Understand user flows such as funnels and retention.</li>
+<li><strong>Custom Events and Metrics</strong>: You can easily create arbitrary metrics and events using the AI SDK for tracing and reporting.</li>
+<li><strong>Reporting Capabilities</strong>: Either use AI's built-in query language to create reports, or automatically export all data into a Storage Account for offline analytics.</li>
+</ul>
+<h2 id="basics-of-working-with-ai">Basics of working with AI</h2>
+<p>AI will automatically activate when you start running your SAFE application. You can locate your AI instance directly from within your SAFE Resource Group in the Azure Portal, or from the "Application Insights" link in the SAFE App Service.</p>
+<p><img alt="" src="../img/deploy-ai-1.png" /></p>
+<p>From your AI dashboard, you can drill down to trace all server requests:</p>
+<p><img alt="" src="../img/deploy-ai-2.png" /></p>
+<p>You can then drill into any specific request, such as the <code>api/init</code> route shown above, in order to see individual requests.</p>
+<p><img alt="" src="../img/deploy-ai-3.png" /></p>
+<p>From here, you can even track further into any individual call. AI has many more features, so it's worth reading the <a href="https://docs.microsoft.com/en-us/azure/application-insights/">extensive documentation</a> on the Azure website.</p>
+<h2 id="how-do-safe-apps-integrate-with-ai">How do SAFE apps integrate with AI?</h2>
+<p>Although AI supports monitoring for both <em>client</em> and <em>server</em>, at the current time, the SAFE template only supports the server mode (although you can add support for client events yourself). This includes:</p>
+<ul>
+<li>Support in the bundled ARM template to create a free AI instance along with your web application.</li>
+<li>Automatic configuration of your web application with connection details to the created AI instance.</li>
+<li>Application support for activating AI in code.</li>
+</ul>
+<p>Both server runtimes supported by the SAFE template have come with AI integration out of the box.</p>
+<h3 id="support-on-giraffe-saturn">Support on Giraffe / Saturn</h3>
+<p>Giraffe uses the standard .NET Core Application Insights SDK in order to communicate with the AI service. It uses the standard AI middleware support for ASP .NET Core, which provides complete tracking of requests, dependencies, errors and live streaming.</p>
+<h3 id="support-on-suave">Support on Suave</h3>
+<p>Suave also uses the standard .NET Core Application Insights SDK in order to communicate with the AI service. However, as Suave does not run on top of ASP .NET Core, it uses a custom web part to intercept and track all requests, dependencies and exceptions on the server as well as live streaming. This web part is typically attached at the "top level" of your web application, surrounding the global WebPart in order to track all requests.</p>
                 
                   
                 
@@ -804,8 +828,8 @@
 
         <!-- Link to previous page -->
         
-          <a href="../template-azure-ai/"
-              title="Application Insights Integration"
+          <a href="../template-appservice/"
+              title="Deploy to App Service"
               class="md-flex md-footer-nav__link md-footer-nav__link--prev"
               rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -818,7 +842,7 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Application Insights Integration
+                Deploy to App Service
               </span>
             </div>
           </a>
@@ -826,7 +850,7 @@
 
         <!-- Link to next page -->
         
-          <a href="../feature-clientserver/" title="Client/Server communication"
+          <a href="../template-azure-registration/" title="Registering with Azure"
               class="md-flex md-footer-nav__link md-footer-nav__link--next"
               rel="next">
             <div class="md-flex__cell md-flex__cell--stretch
@@ -835,7 +859,7 @@
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Client/Server communication
+                Registering with Azure
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

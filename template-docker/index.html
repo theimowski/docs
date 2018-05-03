@@ -99,7 +99,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
-      <a href="#fake" tabindex="1" class="md-skip">
+      <a href="#custom-fake-build-tasks" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -368,31 +368,10 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
     
     <label class="md-nav__link" for="nav-6">
-      Features of SAFE
+      The SAFE Template
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-6">
-        Features of SAFE
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-1" type="checkbox" id="nav-6-1" checked>
-    
-    <label class="md-nav__link" for="nav-6-1">
-      The SAFE Template
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-6-1">
         The SAFE Template
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -431,13 +410,13 @@
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-1-3" type="checkbox" id="nav-6-1-3" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3" type="checkbox" id="nav-6-3" checked>
     
-    <label class="md-nav__link" for="nav-6-1-3">
+    <label class="md-nav__link" for="nav-6-3">
       Deployment Options
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-      <label class="md-nav__title" for="nav-6-1-3">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-3">
         Deployment Options
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -472,8 +451,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#fake" title="FAKE" class="md-nav__link">
-    FAKE
+  <a href="#custom-fake-build-tasks" title="Custom FAKE build tasks" class="md-nav__link">
+    Custom FAKE build tasks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#docker-image" title="Docker image" class="md-nav__link">
+    Docker image
   </a>
   
 </li>
@@ -507,6 +493,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../template-azure-ai/" title="Application Insights Integration" class="md-nav__link">
+      Application Insights Integration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../template-azure-registration/" title="Registering with Azure" class="md-nav__link">
       Registering with Azure
     </a>
@@ -522,6 +520,25 @@
     </nav>
   </li>
 
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Features of SAFE
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        Features of SAFE
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
         
           
           
@@ -571,13 +588,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
     
-    <label class="md-nav__link" for="nav-7">
+    <label class="md-nav__link" for="nav-8">
       FAQs
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-7">
+      <label class="md-nav__title" for="nav-8">
         FAQs
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -667,8 +684,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#fake" title="FAKE" class="md-nav__link">
-    FAKE
+  <a href="#custom-fake-build-tasks" title="Custom FAKE build tasks" class="md-nav__link">
+    Custom FAKE build tasks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#docker-image" title="Docker image" class="md-nav__link">
+    Docker image
   </a>
   
 </li>
@@ -695,11 +719,18 @@
                   <h1>Deploy to Docker</h1>
                 
                 <p>The SAFE template has the ability to easily deploy to a Docker container. The details of the additions to the FAKE script are shown here.</p>
-<h2 id="fake">FAKE</h2>
+<h2 id="custom-fake-build-tasks">Custom FAKE build tasks</h2>
 <ol>
 <li><strong>Bundle</strong> - all necessary artifacts for both Server and Client are collected for following <code>Docker</code> target.</li>
-<li><strong>Docker</strong> - based on present <code>Dockerfile</code>, docker image is built and tagged using <code>dockerUser</code> and <code>dockerImageName</code> values from the script.</li>
+<li><strong>Docker</strong> - based on present <code>Dockerfile</code>, docker image is built and tagged using <code>dockerUser</code> and <code>dockerImageName</code> values from the script. </li>
 </ol>
+<h2 id="docker-image">Docker image</h2>
+<p>The image is based on <a href="https://hub.docker.com/r/microsoft/dotnet/">microsoft/dotnet:runtime</a>.
+Entrypoint for the image is <code>dotnet Server.dll</code> (with <code>/Server</code> working directory).
+To allow incoming traffic, port 8085 is exposed.</p>
+<blockquote>
+<p>Note: Before running the <code>Docker</code> target, make sure to modify the default <code>dockerUser</code> and <code>dockerImageName</code> values in script.</p>
+</blockquote>
 <p>You can also <a href="../template-appservice/">deploy to the Azure App Service platform</a>.</p>
                 
                   
