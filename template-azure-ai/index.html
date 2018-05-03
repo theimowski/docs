@@ -497,15 +497,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#support-on-giraffe-saturn" title="Support on Giraffe / Saturn" class="md-nav__link">
-    Support on Giraffe / Saturn
+  <a href="#ai-support-on-giraffe-saturn" title="AI support on Giraffe / Saturn" class="md-nav__link">
+    AI support on Giraffe / Saturn
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#support-on-suave" title="Support on Suave" class="md-nav__link">
-    Support on Suave
+  <a href="#ai-support-on-suave" title="AI support on Suave" class="md-nav__link">
+    AI support on Suave
   </a>
   
 </li>
@@ -733,15 +733,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#support-on-giraffe-saturn" title="Support on Giraffe / Saturn" class="md-nav__link">
-    Support on Giraffe / Saturn
+  <a href="#ai-support-on-giraffe-saturn" title="AI support on Giraffe / Saturn" class="md-nav__link">
+    AI support on Giraffe / Saturn
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#support-on-suave" title="Support on Suave" class="md-nav__link">
-    Support on Suave
+  <a href="#ai-support-on-suave" title="AI support on Suave" class="md-nav__link">
+    AI support on Suave
   </a>
   
 </li>
@@ -791,16 +791,16 @@
 <p><img alt="" src="../img/deploy-ai-3.png" /></p>
 <p>From here, you can even track further into any individual call. AI has many more features, so it's worth reading the <a href="https://docs.microsoft.com/en-us/azure/application-insights/">extensive documentation</a> on the Azure website.</p>
 <h2 id="how-do-safe-apps-integrate-with-ai">How do SAFE apps integrate with AI?</h2>
-<p>Although AI supports monitoring for both <em>client</em> and <em>server</em>, at the current time, the SAFE template only supports the server mode (although you can add support for client events yourself). This includes:</p>
+<p>Although AI supports monitoring for both client <em>and</em> server, at the current time, the SAFE template only supports the server mode (although you can add support for client events yourself). Server-side support includes:</p>
 <ul>
 <li>Support in the bundled ARM template to create a free AI instance along with your web application.</li>
 <li>Automatic configuration of your web application with connection details to the created AI instance.</li>
-<li>Application support for activating AI in code.</li>
+<li>Application support for activating AI in code for e.g. custom events and metrics.</li>
 </ul>
-<p>Both server runtimes supported by the SAFE template have come with AI integration out of the box.</p>
-<h3 id="support-on-giraffe-saturn">Support on Giraffe / Saturn</h3>
+<p>All server runtimes that are supported by the SAFE Template come with AI integration out of the box:</p>
+<h3 id="ai-support-on-giraffe-saturn">AI support on Giraffe / Saturn</h3>
 <p>Giraffe uses the standard .NET Core Application Insights SDK in order to communicate with the AI service. It uses the standard AI middleware support for ASP .NET Core, which provides complete tracking of requests, dependencies, errors and live streaming.</p>
-<h3 id="support-on-suave">Support on Suave</h3>
+<h3 id="ai-support-on-suave">AI support on Suave</h3>
 <p>Suave also uses the standard .NET Core Application Insights SDK in order to communicate with the AI service. However, as Suave does not run on top of ASP .NET Core, it uses a custom web part to intercept and track all requests, dependencies and exceptions on the server as well as live streaming. This web part is typically attached at the "top level" of your web application, surrounding the global WebPart in order to track all requests.</p>
                 
                   

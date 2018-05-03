@@ -464,6 +464,54 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#release-to-azure-app-service" title="Release to Azure App Service" class="md-nav__link">
+    Release to Azure App Service
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#docker-hub" title="Docker Hub" class="md-nav__link">
+    Docker Hub
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#release-script" title="Release script" class="md-nav__link">
+    Release script
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initial-docker-push" title="Initial docker push" class="md-nav__link">
+    Initial docker push
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#azure-portal" title="Azure Portal" class="md-nav__link">
+    Azure Portal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#further-releases" title="Further releases" class="md-nav__link">
+    Further releases
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
       
       
       
@@ -697,6 +745,54 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#release-to-azure-app-service" title="Release to Azure App Service" class="md-nav__link">
+    Release to Azure App Service
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#docker-hub" title="Docker Hub" class="md-nav__link">
+    Docker Hub
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#release-script" title="Release script" class="md-nav__link">
+    Release script
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initial-docker-push" title="Initial docker push" class="md-nav__link">
+    Initial docker push
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#azure-portal" title="Azure Portal" class="md-nav__link">
+    Azure Portal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#further-releases" title="Further releases" class="md-nav__link">
+    Further releases
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
       
       
       
@@ -718,7 +814,7 @@
                 
                   <h1>Deploy to Docker</h1>
                 
-                <p>The SAFE template has the ability to easily deploy to a Docker container. The details of the additions to the FAKE script are shown here.</p>
+                <p>The SAFE template has the ability to easily create a <a href="https://www.docker.com/">Docker</a> container. The details of the additions to the FAKE script are shown here. For this deployment option SAFE uses the Linux containers and therefore you need docker installed on your machine and configure it to run with <a href="https://docs.microsoft.com/en-us/virtualization/windowscontainers/deploy-containers/linux-containers">Linux containers</a>.</p>
 <h2 id="custom-fake-build-tasks">Custom FAKE build tasks</h2>
 <ol>
 <li><strong>Bundle</strong> - all necessary artifacts for both Server and Client are collected for following <code>Docker</code> target.</li>
@@ -731,7 +827,40 @@ To allow incoming traffic, port 8085 is exposed.</p>
 <blockquote>
 <p>Note: Before running the <code>Docker</code> target, make sure to modify the default <code>dockerUser</code> and <code>dockerImageName</code> values in script.</p>
 </blockquote>
-<p>You can also <a href="../template-appservice/">deploy to the Azure App Service platform</a>.</p>
+<h2 id="release-to-azure-app-service">Release to Azure App Service</h2>
+<p>The following part shows how to set up automatic deployment to <a href="https://azure.microsoft.com">Microsoft Azure</a>.</p>
+<h3 id="docker-hub">Docker Hub</h3>
+<p>Create a new <a href="https://hub.docker.com">Docker Hub</a> account and a new public repository on Docker Hub.</p>
+<h3 id="release-script">Release script</h3>
+<p>Create a file called <code>release.cmd</code> with the following content and configure your DockerHub credentials:</p>
+<pre><code>@echo off
+cls
+
+.paket\paket.exe restore
+if errorlevel 1 (
+  exit /b %errorlevel%
+)
+
+packages\build\FAKE\tools\FAKE.exe build.fsx Deploy "DockerLoginServer=docker.io" "DockerImageName=****" "DockerUser=****" "DockerPassword=***" %*
+</code></pre>
+<p>Don't worry the file is already in <code>.gitignore</code> so your password will not be commited.</p>
+<h3 id="initial-docker-push">Initial docker push</h3>
+<p>In order to release a container you need to create a new entry in [RELEASE_NOTES.md] and run <code>release.cmd</code>.
+This will build the server and client, run all test, put the app into a docker container and push it to your docker hub repo.</p>
+<h3 id="azure-portal">Azure Portal</h3>
+<p>Go to the <a href="https://portal.azure.com">Azure Portal</a> and create a new "Web App for Containers".
+Configure the Web App to point to the docker repo and select <code>latest</code> channel of the container.</p>
+<p><img alt="Docker setup" src="https://user-images.githubusercontent.com/57396/31279587-e06001d0-aaa9-11e7-9b4b-a3e8278a6419.png" /></p>
+<p>Also look for the "WebHook Url" on the portal, copy that url and set it as new trigger in your Docker Hub repo.</p>
+<p><em>Note that entering a Startup File is not necessary.</em></p>
+<p>The <code>Dockerfile</code> used to create the docker image exposes port 8085 for the Giraffe server application. This port needs to be mapped to port 80 within the Azure App Service for the application to receive http traffic.</p>
+<p>Presently this can only be done using the Azure CLI. You can do this easily in Azure Cloud Shell (accessible from the Azure Portal in the top menu bar) using the following command:</p>
+<p><code>az webapp config appsettings set --resource-group &lt;resource group name&gt; --name &lt;web app name&gt; --settings WEBSITES_PORT=8085</code></p>
+<p>The above command is effectively the same as running <code>docker run -p 80:8085 &lt;image name&gt;</code>.</p>
+<p>Now you should be able to reach the website on your <code>.azurewebsites.net</code> url.</p>
+<h3 id="further-releases">Further releases</h3>
+<p>Now everything is set up. By creating new entries in [RELEASE_NOTES.md] and a new run of <code>release.cmd</code> the website should update automatically.</p>
+<p>Alternatively, you can use the <a href="../template-appservice/">ARM delpoy option</a> to do automatic deployment to the Azure App Service platform.</p>
                 
                   
                 
