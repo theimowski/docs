@@ -435,15 +435,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#fableremoting" title="Fable.Remoting" class="md-nav__link">
-    Fable.Remoting
+  <a href="#remoting" title="Remoting" class="md-nav__link">
+    Remoting
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#deployment" title="Deployment" class="md-nav__link">
-    Deployment
+  <a href="#deploy" title="Deploy" class="md-nav__link">
+    Deploy
   </a>
   
 </li>
@@ -759,15 +759,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#fableremoting" title="Fable.Remoting" class="md-nav__link">
-    Fable.Remoting
+  <a href="#remoting" title="Remoting" class="md-nav__link">
+    Remoting
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#deployment" title="Deployment" class="md-nav__link">
-    Deployment
+  <a href="#deploy" title="Deploy" class="md-nav__link">
+    Deploy
   </a>
   
 </li>
@@ -817,7 +817,7 @@
 <ul>
 <li><a href="https://saturnframework.github.io/docs/">Saturn</a>, <a href="https://github.com/giraffe-fsharp/Giraffe">Giraffe</a> or <a href="https://suave.io/">Suave</a> for your web server</li>
 <li><a href="http://fable.io/">Fable</a> for client-side F#</li>
-<li><a href="https://fable-elmish.github.io/elmish/">Elmish</a> for web UI</li>
+<li><a href="https://elmish.github.io/">Elmish</a> for web UI</li>
 <li><a href="https://mangelmaxime.github.io/Fulma/">Fulma</a> for consistent web styling</li>
 <li><a href="../template-docker/">Docker</a> or <a href="../template-appservice/">Azure App Service</a> deployment models for hosting.</li>
 </ul>
@@ -847,11 +847,11 @@
 <li><code>landing</code>: adds Fulma with the <a href="https://dansup.github.io/bulma-templates/templates/landing.html">'Landing'</a> Bulma template.</li>
 <li><code>login</code>: adds Fulma with the <a href="https://dansup.github.io/bulma-templates/templates/login.html">'Login'</a> Bulma template.</li>
 </ul>
-<h3 id="fableremoting">Fable.Remoting</h3>
-<p><em>Configures the SAFE app to use <a href="https://github.com/Zaid-Ajaj/Fable.Remoting">Fable.Remoting</a> to the template. See <a href="../feature-clientserver/">here</a> for an overview of Fable Remoting and the alternatives for sharing data between client and server.</em></p>
+<h3 id="remoting">Remoting</h3>
+<p><em>Configures the SAFE app to use <a href="https://github.com/Zaid-Ajaj/Fable.Remoting">Fable.Remoting</a> to the template. If this argument is not supplied, client / server communication will be handled through the standard routing and serialization mechanism of the server. See <a href="../feature-clientserver/">here</a> for an overview of Fable Remoting and the alternatives for sharing data between client and server.</em></p>
 <p>Usage: <code>dotnet new SAFE --Remoting</code></p>
-<h3 id="deployment">Deployment</h3>
-<p><em>Configures the SAFE app to elements needed for deploying to one of two different hosting models.</em></p>
+<h3 id="deploy">Deploy</h3>
+<p><em>Optionally configures the SAFE app to elements needed for deploying to one of two different hosting models. If this argument is not supplied, no explicit support for any hosting model will be provided.</em></p>
 <p>Usage: <code>dotnet new SAFE --Deploy &lt;hosting model&gt;</code></p>
 <p>Where <code>&lt;hosting model&gt;</code> is one of:</p>
 <ul>
