@@ -38,7 +38,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.7.2">
+      <meta name="generator" content="mkdocs-0.17.4, mkdocs-material-2.9.1">
     
     
       
@@ -46,9 +46,14 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.8d40d89b.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.ba0fd1a6.css">
       
         <link rel="stylesheet" href="../assets/stylesheets/application-palette.6079476c.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#fb8c00">
       
     
     
@@ -60,8 +65,8 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
-      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
     
     
   </head>
@@ -75,7 +80,7 @@
         
         
           <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
-    viewBox="0 0 416 448" id="github">
+    viewBox="0 0 416 448" id="__github">
   <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
         8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
         18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
@@ -95,9 +100,13 @@
         
       </defs>
     </svg>
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer" autocomplete="off">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
-    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#developing-safe-applications" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
     
     
       <header class="md-header" data-md-component="header">
@@ -111,7 +120,7 @@
         </a>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
-        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
       </div>
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
@@ -130,14 +139,14 @@
       <div class="md-flex__cell md-flex__cell--shrink">
         
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
             
 <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="search"></label>
+  <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
-      <label class="md-icon md-search__icon" for="search"></label>
+      <label class="md-icon md-search__icon" for="__search"></label>
       <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
         &#xE5CD;
       </button>
@@ -170,7 +179,7 @@
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#github" width="24" height="24"></use>
+          <use xlink:href="#__github" width="24" height="24"></use>
         </svg>
       </div>
     
@@ -199,7 +208,7 @@
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
-  <label class="md-nav__title md-nav__title--site" for="drawer">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
     <span class="md-nav__button md-logo">
       
         <i class="md-icon"></i>
@@ -219,7 +228,7 @@
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#github" width="24" height="24"></use>
+          <use xlink:href="#__github" width="24" height="24"></use>
         </svg>
       </div>
     
@@ -574,12 +583,72 @@
 
   <li class="md-nav__item md-nav__item--active">
     
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Moving from dev to prod
+      </label>
     
     <a href="./" title="Moving from dev to prod" class="md-nav__link md-nav__link--active">
       Moving from dev to prod
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#developing-safe-applications" title="Developing SAFE applications" class="md-nav__link">
+    Developing SAFE applications
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#webpack-dev-server" title="Webpack Dev Server" class="md-nav__link">
+    Webpack Dev Server
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running-safe-applications-in-production" title="Running SAFE applications in production" class="md-nav__link">
+    Running SAFE applications in production
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#client-asset-hosting-alternatives" title="Client asset hosting alternatives" class="md-nav__link">
+    Client asset hosting alternatives
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -597,6 +666,18 @@
   <li class="md-nav__item">
     <a href="../learning/" title="Learning Resources" class="md-nav__link">
       Learning Resources
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../news/" title="News" class="md-nav__link">
+      News
     </a>
   </li>
 
@@ -632,6 +713,68 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#developing-safe-applications" title="Developing SAFE applications" class="md-nav__link">
+    Developing SAFE applications
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#webpack-dev-server" title="Webpack Dev Server" class="md-nav__link">
+    Webpack Dev Server
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running-safe-applications-in-production" title="Running SAFE applications in production" class="md-nav__link">
+    Running SAFE applications in production
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#client-asset-hosting-alternatives" title="Client asset hosting alternatives" class="md-nav__link">
+    Client asset hosting alternatives
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -642,7 +785,25 @@
                 
                   <h1>Moving from dev to prod</h1>
                 
-                
+                <p>Support for moving from development to production with SAFE applications is included "out of the box" when using e.g. <a href="../template-appservice">Azure</a> or <a href="../template-docker">Docker</a> deployment options. Nonetheless, this page explains the key differences that you should be aware of between running SAFE applications in development and production.</p>
+<h2 id="developing-safe-applications">Developing SAFE applications</h2>
+<p>The SAFE template is geared up towards a streamlined development process. Firstly, it contains a <a href="../template-fake">FAKE build script</a> which you can use this to quickly download dependencies, as well as build and run both the client and server on your machine.</p>
+<p>The development process uses <em>two web servers</em> running in tandem:</p>
+<ul>
+<li>The "back-end" .NET web server which hosts your API endpoints and other server-generated content. This uses Kestrel on ASP .NET out of the box (although you can opt for <a href="https://docs.microsoft.com/en-us/aspnet/core/fundamentals/servers">other options</a>).</li>
+<li>A "front-end" web server which hosts your Fable application. The SAFE template uses the <a href="https://github.com/webpack/webpack-dev-server">Webpack Dev Server</a> for this.</li>
+</ul>
+<p><img alt="" src="../img\faq-build-1.png" /></p>
+<p>The backend build makes use of <code>dotnet watch</code> to allow you to make changes to your server-side application and have the server automatically restart with the latest changes. Since your back-end applications will typically be stateless, this permits a rapid development workflow.</p>
+<p>On the client side, your code is compiled using webpack. This provides many benefits for working with javascript, such as minification and bundling, as well as <a href="../feature-hmr">hot module replacement</a>, a feature made possible when using the webpack dev server. This means that you can continually make changes to your client application code and can rapidly see the results reflected in your browser, without the need to fully reload the application.</p>
+<h3 id="webpack-dev-server">Webpack Dev Server</h3>
+<p>It's important to note that the webpack dev server is configured to automatically route traffic intended for <code>api/*</code> routes to the back-end web server. This <em>simulates</em> how a SAFE application might work in a production environment, with both client and server assets served from a single web server. This also allows you to not worry about ports and hosts for your backend server in your client code, or <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">CORS</a> issues. You can find out more about the configuration of the webpack dev server in SAFE <a href="../template-webpack">here</a>.</p>
+<h2 id="running-safe-applications-in-production">Running SAFE applications in production</h2>
+<p>In a production environment, you won't typically use the webpack dev server. Instead, it's more common to use webpack as a one-off compiler step to create your bundled javascript from your Fable app (plus dependencies), and then deploy this along with your back-end web server which also hosts that content directly. For example, you can use Saturn to host the static content required by the application e.g. HTML, JS and CSS files etc. as well as your back-end APIs. This fits very well with standard CI / CD processes, as a build step in your FAKE script or VSTS / AppVeyor / Travis step etc.</p>
+<p>Both the <a href="../template-appservice">Azure</a> and <a href="../template-docker">Docker</a> configuration options will do this automatically.</p>
+<p><img alt="" src="../img\faq-build-2.png" /></p>
+<h3 id="client-asset-hosting-alternatives">Client asset hosting alternatives</h3>
+<p>Rather than hosting your client-side content and application inside your web server, you can opt to host your static content from some other service that supports hosting of HTTP content, such as Azure Blobs, or a content hosting service. In such a case, you'll need to consider how to route traffic to your back-end API from your client application (as they are hosted on different domains), as well as handle any potential CORS issues.</p>
                 
                   
                 
@@ -731,8 +892,7 @@
       
         
   <div class="md-footer-social">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
     
       <a href="https://github.com/SAFE-Stack" class="md-footer-social__link fa fa-github"></a>
     
@@ -749,9 +909,9 @@
       
     </div>
     
-      <script src="../assets/javascripts/application.b438e6c5.js"></script>
+      <script src="../assets/javascripts/application.a59e2a89.js"></script>
       
-      <script>app.initialize({version:"0.17.3",url:{base:".."}})</script>
+      <script>app.initialize({version:"0.17.4",url:{base:".."}})</script>
       
     
     
